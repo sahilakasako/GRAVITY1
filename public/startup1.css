@@ -134,11 +134,12 @@ body {
 
 .home{
   padding: 0 7vw;
+  margin-top: 80px;
 }
 
 .food_items{
   padding: 20px;
-  background-color: aliceblue;
+  background-color: #1a4f7ad8;
   border-radius: 10px;
 }
 
@@ -226,13 +227,25 @@ body {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
+.home{
+  margin-top: 70px;
+}
+
+.home h3{
+  text-align: center;
+  color: #ffffff;
+  margin-left: 130px;
+  margin-right: 130px;
+  font-size: 15px;
+}
+
 .home h1{
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
   font-size: 50px;
 }
 .home span{
-  color: #1A4F7A;
+  color: #fdfdfd;
 }
 
 .food_items h2{

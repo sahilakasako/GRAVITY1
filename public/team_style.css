@@ -127,6 +127,8 @@ header {
 
 .home {
   padding: 50px 20px;
+  background-color: #1a4f7ace;
+  margin-top: -70px;
 }
 
 .food_items{
