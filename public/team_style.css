@@ -176,11 +176,11 @@ header {
 
 .item img.profile {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   margin-bottom: 15px;
-}
+}*
 
 .item h2 {
   margin: 10px 0 5px;

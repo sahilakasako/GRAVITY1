@@ -322,9 +322,9 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   width: 350px;
   max-width: 90%;
-  text-align: left;
   transition: transform 0.3s;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .foundation-card:hover {
@@ -333,7 +333,7 @@ body {
 
 .foundation-card h2 {
   font-size: 24px;
-  color: #1d3557;
+  color: #1A4F7A;
   margin-bottom: 15px;
 }
 
@@ -355,7 +355,7 @@ body {
 }
 .Event-items h1{
   font-size: 40px;
-  color: #fdfdfd;
+  color: #1A4F7A;
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-color: #acd0ed;
@@ -426,17 +426,20 @@ body {
   border-radius: 30px;
 
 }
+
 .Achievements h2{
   color: #196ca8;
 }
+
 .Achievements h1{
   font-size: 40px;
-  color: #fdfdfd;
+  color: #1A4F7A;
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-color: #acd0ed;
   text-align: center;
 }
+
 .Achievements .allAchievements{
   display: flex;
   justify-content: space-around;
@@ -453,6 +456,24 @@ body {
   color: #196ca8;
   text-align: center;
   border-radius: 30px;
+}
+
+.Gallery h1{
+  font-size: 40px;
+  color: #1A4F7A;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #acd0ed;
+  text-align: center;
+}
+
+.memoryitem{
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memoryitem:hover {
+  transform: translateY(-6px);
 }
 
 .memoryscroller img{
