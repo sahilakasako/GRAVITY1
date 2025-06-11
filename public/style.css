@@ -448,21 +448,27 @@ body {
 }
 
 /* Candid Gallery*/
+.Gallery{
+  background-color: #dce4ea;
+  color: #196ca8;
+  text-align: center;
+  border-radius: 30px;
+}
+
 .memoryscroller img{
   width: 400px;
 }
 
+
 .memoryscroller{
   padding-block: 8px;
-  border-block: 1px solid;
   overflow: hidden;
   user-select: none;
-  background-color: #dce4ea;
-
-
   --gap: 25px;
   display: flex;
   gap: var(--gap);
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 .memoryscroller ul {
