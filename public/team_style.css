@@ -184,7 +184,7 @@ header {
 
 .item h2 {
   margin: 10px 0 5px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -199,11 +199,17 @@ header {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 15px;
+  
 }
 
 .item img.linkedin {
   width: 28px;
   height: 28px;
+}
+
+.item .linkedin-wrapper {
+  margin-top: auto;  /* Pushes to the bottom */
+  text-align: center;
 }
 
 .item a {

@@ -22,10 +22,22 @@
   display: none;
   color: #ffffff;
 }
-.logo img{
-  width: 135px;
+
+.logo p{
+  padding-right: 20px;
+  height: 40px;
 }
 
+.logo img{
+  width: 135px;
+  padding-right: 20px;
+  height: 37px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
 .bar{
   display: none;
 }
@@ -542,7 +554,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-column {
