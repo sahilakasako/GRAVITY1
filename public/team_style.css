@@ -22,8 +22,28 @@
   display: none;
   color: #ffffff;
 }
-.logo img{
-  width: 180px;
+.logo p{
+  padding-right: 20px;
+  height: 40px;
+  margin-top: 4px;
+}
+
+.Gravity_logo img{
+  width: 150px;
+  padding-right: 20px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Mcet_logo img{
+  padding-right: 20px;
+  width: 170px;
+  height: auto;
 }
 
 .bar{
@@ -129,6 +149,7 @@ header {
   padding: 50px 20px;
   background-color: #1a4f7ace;
   margin-top: -70px;
+  padding-bottom: 30px;
 }
 
 .food_items{
@@ -165,7 +186,6 @@ header {
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   width: 300px;
-  padding: 30px 20px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -184,13 +204,23 @@ header {
 
 .item h2 {
   margin: 10px 0 5px;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.item .small h2 {
+  margin: 10px 0 5px;
+  font-size: 15.3px;
   font-weight: bold;
 }
 
+.item .small2 h2 {
+  margin: 10px 0 5px;
+  font-size: 14.9px;
+  font-weight: bold;
+}
 .item h4 {
   color: #666;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: 10px;
 }
 
@@ -199,7 +229,6 @@ header {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 15px;
-  
 }
 
 .item img.linkedin {

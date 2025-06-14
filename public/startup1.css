@@ -22,8 +22,28 @@
   display: none;
   color: #ffffff;
 }
-.logo img{
-  width: 180px;
+.logo p{
+  padding-right: 20px;
+  height: 40px;
+  margin-top: 4px;
+}
+
+.Gravity_logo img{
+  width: 150px;
+  padding-right: 20px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Mcet_logo img{
+  padding-right: 20px;
+  width: 170px;
+  height: auto;
 }
 
 .bar{
@@ -134,14 +154,35 @@ body {
 
 .home{
   padding: 0 7vw;
-  margin-top: 80px;
+  margin-top: -80px;
+  background-color: #1a4f7ace;
+  margin-top: -70px;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.home h1{
+  text-align: center;
+  font-size: 42px;
+}
+
+.home span{
+  color: #196ca8;
+}
+
+.home h3{
+  text-align: center;
+  color: #5f5f5f;
+  margin-left: 130px;
+  margin-right: 130px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .food_items{
   padding: 20px;
-  background-color: #1a4f7ad8;
+  background-color: #ffffffcf;
   border-radius: 30px;
-  margin-bottom: 50px;
 }
 
 .food_items .item {
@@ -169,6 +210,64 @@ body {
   flex-grow: 1;
   max-width: 650px;
   text-align: right;
+}
+
+.food_items .item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.food_items .item .type img{
+  width: 20px;
+}
+
+.food_items .item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-left: 50px;
+  text-align: justify;
+}
+
+.food_items .item {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.food_items h2{
+  font-size: 40px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.item{
+  font-size: 16px;
+  width: 250px;
+  padding: 30px;
+  text-align: center;
+}
+
+.item img{
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.item p{
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.food_items .red_button{
+  width: 140px;
+  margin-left: 45%;
+  margin-bottom: 20px;
 }
 
 .red_button{
@@ -202,83 +301,7 @@ body {
   color: #1A4F7A;
 }
 
-.food_items .item h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
 
-.food_items .item .type img{
-  width: 20px;
-}
-
-.food_items .item p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  margin-left: 50px;
-}
-
-.food_items .item {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-}
-
-.home{
-  margin-top: 70px;
-}
-
-.home h3{
-  text-align: center;
-  color: #ffffff;
-  margin-left: 130px;
-  margin-right: 130px;
-  font-size: 15px;
-}
-
-.home h1{
-  text-align: center;
-  margin-top: 30px;
-  font-size: 50px;
-}
-.home span{
-  color: #fdfdfd;
-}
-
-.food_items h2{
-  font-size: 40px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-
-.item{
-  font-size: 16px;
-  width: 250px;
-  padding: 30px;
-  text-align: center;
-}
-
-.item img{
-  width: 150px;
-  margin-bottom: 15px;
-}
-
-.item p{
-  font-size: 12px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.food_items .red_button{
-  width: 140px;
-  margin-left: 45%;
-  margin-bottom: 20px;
-}
 
 @media only screen and (max-width:764px){
   .header .nav, .header .account{

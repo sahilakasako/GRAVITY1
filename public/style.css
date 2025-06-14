@@ -26,18 +26,27 @@
 .logo p{
   padding-right: 20px;
   height: 40px;
+  margin-top: 4px;
 }
 
-.logo img{
-  width: 135px;
+.Gravity_logo img{
+  width: 150px;
   padding-right: 20px;
-  height: 37px;
+  height: auto;
+  margin-top: 5px;
 }
 
 .logo{
   display: flex;
   justify-content: space-between;
 }
+
+.Mcet_logo img{
+  padding-right: 20px;
+  width: 170px;
+  height: auto;
+}
+
 .bar{
   display: none;
 }
@@ -175,8 +184,24 @@ body {
 .scroller img{
   width: 150px;
 }
+
+.scroller .IEDC_logo img{
+  width: 200px;
+  height: auto;
+}
+
+.scroller .KSUM_logo img{
+  width: 120px;
+  height: auto;
+}
+
+.scroller .Mulearn_logo img{
+  width: 120px;
+  height: auto;
+}
+
 .scroller .comp1{
-  padding-left: 200px;
+  padding-left: 100px;
 }
 .scroller {
   padding-block: 8px;
@@ -313,9 +338,15 @@ body {
 
 .foundation-section h1{
   color: #1A4F7A;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.foundation-section span{
   text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-color: #acd0ed;
+  text-underline-offset: 10px;
+  text-decoration-color: #1A4F7A;
+  color: #1A4F7A;
   margin-bottom: 50px;
   font-size: 40px;
 }
@@ -336,7 +367,7 @@ body {
   max-width: 90%;
   transition: transform 0.3s;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: justify;
 }
 
 .foundation-card:hover {
@@ -355,6 +386,79 @@ body {
   color: #444;
 }
 
+.about-section {
+  background: #dce4ea;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 70px;
+}
+
+.about-section h1{
+  color: #1A4F7A;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.about-section span{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #1A4F7A;
+  color: #1A4F7A;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-maincard{
+  background-color: #f2eeee;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  max-width: 90%;
+  transition: transform 0.3s;
+  margin-bottom: 50px;
+  text-align: justify;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.about-maincard p{
+  font-size: 17px;
+}
+
+.about-card {
+  background-color: #f2eeee;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  max-width: 90%;
+  transition: transform 0.3s;
+  margin-bottom: 50px;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card h2 {
+  font-size: 24px;
+  color: #1A4F7A;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+}
 
 .Event-items{
   position: relative;
@@ -362,17 +466,26 @@ body {
   background-color: #dce4ea;
   border-radius: 30px;
 }
+
 .Event-items h2{
   color: #196ca8;
 }
+
 .Event-items h1{
   font-size: 40px;
   color: #1A4F7A;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-color: #acd0ed;
   text-align: center;
 }
+
+.Event-items span{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #1A4F7A;
+  color: #1A4F7A;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
 .Event-items .menu{
   display: flex;
   justify-content: space-around;
@@ -425,6 +538,7 @@ body {
   margin-left: 45%;
   margin-bottom: 20px;
 }
+
 .Achievements .red_button{
   width: 140px;
   margin-left: 45%;
@@ -436,9 +550,21 @@ body {
   margin: 70px 0;
   background-color: #dce4ea;
   border-radius: 30px;
-
+  padding-bottom: 80px;
 }
 
+.Achievements .item{
+  font-size: 16px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  height: auto;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 70px;
+}
 .Achievements h2{
   color: #196ca8;
 }
@@ -446,10 +572,22 @@ body {
 .Achievements h1{
   font-size: 40px;
   color: #1A4F7A;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-color: #acd0ed;
   text-align: center;
+}
+
+.allAchievements p{
+  font-size: 13px;
+  color: #333;
+  text-align: justify;
+}
+
+.Achievements span{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #1A4F7A;
+  color: #1A4F7A;
+  margin-bottom: 50px;
+  font-size: 40px;
 }
 
 .Achievements .allAchievements{
@@ -460,6 +598,53 @@ body {
 .Achievements .event-image {
   width: 200px; /* or any size you want */
   height: auto; /* maintains aspect ratio */
+}
+
+.allAchievements .item{
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.allAchievements .item:hover {
+  transform: translateY(-6px);
+}
+
+.allAchievements img{
+  width: 400px;
+}
+
+
+.allAchievements{
+  padding-block: 8px;
+  overflow: hidden;
+  user-select: none;
+  --gap: 25px;
+  display: flex;
+  gap: var(--gap);
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.allAchievements ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 60s linear infinite;
+}
+
+.allAchievements:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
 
 /* Candid Gallery*/
@@ -473,10 +658,16 @@ body {
 .Gallery h1{
   font-size: 40px;
   color: #1A4F7A;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-color: #acd0ed;
   text-align: center;
+}
+
+.Gallery span{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #1A4F7A;
+  color: #1A4F7A;
+  margin-bottom: 50px;
+  font-size: 40px;
 }
 
 .memoryitem{
@@ -539,8 +730,6 @@ body {
   margin-top: 10px;
 }
 
-
-
 .footer {
   margin-top: 50px;
   background-color: #dce4ea;
@@ -592,36 +781,12 @@ body {
   font-size: 14px;
 }
 
-.powered {
-  font-size: 16px;
+.footer-bottom .powered {
+  font-size: 12px;
   margin-top: 10px;
-  color: #fefefe;
+  color: #1A4F7A;
 }
 
-/* Optional: Font Awesome icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-
-
-.script{
-  align-items: center;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: #1f1d1d00;
-}
-
-.script img{ /*not needed*/
-  width: 350px;
-  margin-left: 100px;
-  margin-right: 10px; /* Space between the paragraph and image */
-  height: auto;
-  flex: 0 0 auto; /* Keep the image from shrinking or growing */
-}
-
-.script h2{
-  margin-left: 43%;
-  color: #ffffff;
-  font-size: 10px;
-}
 
 @media only screen and (max-width:764px){
   .header .nav, .header .account{
