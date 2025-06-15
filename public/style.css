@@ -437,7 +437,7 @@ body {
   padding: 30px 25px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  width: 350px;
+  width: 325px;
   max-width: 90%;
   transition: transform 0.3s;
   margin-bottom: 50px;
@@ -641,11 +641,121 @@ body {
   animation-play-state: paused;
 }
 
-@keyframes scroll {
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
+
+
+
+    .scroll-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+    }
+
+    .scroll-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 40s linear infinite;
+    }
+
+    .scroll-list {
+      display: flex;
+      padding: 20px 0;
+      margin: 0;
+      list-style: none;
+    }
+    .scroll-wrapper:hover .scroll-track {
+      animation-play-state: paused;
+    }
+    .scroll-track li {
+      min-width: 300px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .event-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .item p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+
+
+.scroll-track-right li {
+      min-width: 300px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+.scroll-wrapper-right {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    .scroll-track-right {
+      display: flex;
+      width: max-content;
+      animation: scroll-right 40s linear infinite;
+    }
+
+    .scroll-list-right {
+      display: flex;
+      padding: 20px 0;
+      margin: 0;
+      list-style: none;
+    }
+    .scroll-wrapper:hover .scroll-track-right {
+      animation-play-state: paused;
+    }
+    .scroll-track-right li {
+      min-width: 300px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+
+    @keyframes scroll-right {
+    0% {
+    transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
-}
+
+
+
+
+
+
+
+
 
 /* Candid Gallery*/
 .Gallery{
