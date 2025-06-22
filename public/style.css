@@ -996,6 +996,10 @@ body {
 
 /* Responsive */
 @media only screen and (max-width: 400px) {
+
+*{
+  overflow-x: hidden;
+}
   header {
   height: 50px;
 }
@@ -1039,6 +1043,7 @@ body {
   background-size: contain;           /* Make whole image visible, fit inside container */
   /* or */
   /* background-size: 50% auto; */    /* Make width 50%, height auto to maintain ratio */
+  overflow: hidden;
   
 }
 
@@ -1086,6 +1091,32 @@ body {
 
 
 
+.home{
+  background-color: #0000000b;
+  padding: 0vw 0vw;
+  z-index: -1;
+  margin-top: 5px;
+  overflow-x: hidden;
+}
+
+
+.home_mainpage{
+  padding: 0vw 7vw;
+}
+
+.home h1{
+  padding-top: 40px;
+  color: #223648;
+}
+
+.home h2{
+  color: #223648;
+  font-size: 20px;
+}
+
+.home p{
+  color: #121230;
+}
 
 /*SLIDER MAIN PAGE START */
 .scroller img{
