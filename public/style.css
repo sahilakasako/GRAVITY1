@@ -1048,7 +1048,7 @@ body {
 }
 
 .main_slide img {
-  margin-top: 70px;
+  margin-top: 20px;
   width: 325px;         /* change width */
   height: auto;         /* auto height keeps image ratio */
   padding-top: 2vw;
@@ -1069,13 +1069,24 @@ body {
 }
 
 .main_slide span{
-  color: #1f4c83;
+  color: #2c5f9d;
 }
-
+.mainlogo{
+  text-align: center;
+}
 .mainlogo .phn_welcome{
   display: block !important;
   margin-top: 0px;
   font-size: 12px;
+}
+
+.phn_welcome h1{
+  font-size: 20px;
+  padding-top: 0px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  text-align: center;
+  margin-left: 0px;
 }
 
 .mainlogo .buttons{
@@ -1101,26 +1112,26 @@ body {
 
 /*SLIDER MAIN PAGE START */
 .scroller img{
-  width: 150px;
+  width: 100px;
 }
 
 .scroller .IEDC_logo img{
-  width: 200px;
+  width: 160px;
   height: auto;
 }
 
 .scroller .KSUM_logo img{
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 
 .scroller .Mulearn_logo img{
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
 .scroller .comp1{
-  padding-left: 100px;
+  padding-left: 10px;
 }
 .scroller {
   padding-block: 8px;
@@ -1243,26 +1254,27 @@ body {
 .foundation-section h1{
   color: #1A4F7A;
   margin-bottom: 50px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .foundation-section span{
   text-decoration: underline;
-  text-underline-offset: 10px;
+  text-underline-offset: 5px;
   text-decoration-color: #1A4F7A;
   color: #1A4F7A;
   margin-bottom: 50px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .foundation-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 0px;
 }
 
 .foundation-card {
+  margin-top: 5px;
   background-color: #f2eeee;
   padding: 30px 25px;
   border-radius: 20px;
@@ -1307,7 +1319,7 @@ body {
 
 .about-section span{
   text-decoration: underline;
-  text-underline-offset: 10px;
+  text-underline-offset: 5px;
   text-decoration-color: #1A4F7A;
   color: #1A4F7A;
   margin-bottom: 50px;
@@ -1330,14 +1342,17 @@ body {
   transition: transform 0.3s;
   margin-bottom: 50px;
   text-align: justify;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  overflow: visible;
 }
 
 .about-maincard p{
   font-size: 17px;
   color: #444;
 }
+
+
 
 .about-card {
   background-color: #f2eeee;
