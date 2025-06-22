@@ -1048,20 +1048,16 @@ body {
 }
 
 .main_slide img {
-  margin-top: 30px;
+  margin-top: 70px;
   width: 325px;         /* change width */
   height: auto;         /* auto height keeps image ratio */
   padding-top: 2vw;
   margin-left: 0px;
+  margin-right: 6px;
 }
 
 .main_slide .red_button {
   display: none;
-  margin-left: 10px;
-  margin-bottom: 15px;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .main_slide{
@@ -1070,10 +1066,10 @@ body {
 
 .main_slide pre{
   display: none;
-  margin-top: 0px;
-  font-size: 30px;
-  max-width: 1000px;
-  color: #223648;
+}
+
+.main_slide span{
+  color: #1f4c83;
 }
 
 .mainlogo .phn_welcome{
@@ -1083,40 +1079,25 @@ body {
 }
 
 .mainlogo .buttons{
-  display: block !important;
+
   margin-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  display: flex !important;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  flex-wrap: wrap;
 }
 
-
-
-
-
-.home{
-  background-color: #0000000b;
-  padding: 0vw 0vw;
-  z-index: -1;
-  margin-top: 5px;
-  overflow-x: hidden;
-}
-
-
-.home_mainpage{
-  padding: 0vw 7vw;
-}
-
-.home h1{
-  padding-top: 40px;
+.scroll h1{
+  font-size: 25px;
   color: #223648;
 }
 
-.home h2{
-  color: #223648;
-  font-size: 20px;
-}
 
-.home p{
-  color: #121230;
-}
+
+
 
 /*SLIDER MAIN PAGE START */
 .scroller img{
