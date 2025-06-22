@@ -47,26 +47,25 @@
   height: auto;
 }
 
-.bar{
-  display: none;
-}
-.account{
-  display: none;
-}
-.headerbar{
-  display: none;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Header Styling */
+header {
   height: 60px;
   padding: 0 7vw;
   background-color: #1f1d1dcf;
   border-bottom: 2px solid #00000096;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.763);
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
 }
 
 header {
@@ -87,62 +86,154 @@ header {
   transition: color 0.3s ease;
 }
 
-.nav ul li{
+.logo p{
+  padding-right: 20px;
+  height: 40px;
+  margin-top: 4px;
+}
+
+.Gravity_logo img{
+  width: 150px;
+  padding-right: 20px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Mcet_logo img{
+  padding-right: 20px;
+  width: 170px;
+  height: auto;
+}
+
+#brand a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 15px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a {
   padding: 0 15px;
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
 }
 
-.account{
-  flex: 0.1;
-}
-.account ul{
-  display: flex;
-  justify-content: end;
+nav ul li a:hover {
+  color: #1c73b1;
 }
 
-.account ul li{
-  padding: 0 15px;
-  font-size: 18px;
+.selected a {
+  color: #1c73b1;
 }
 
-.bar i:hover{
-  color: rgb(253, 124,124);
-}
-
-.search{
+/* Hamburger Icon */
+#hamburger-icon {
   display: none;
-  width: 200px;
-  justify-content: center;
-}
-
-.search input{
-  width: 100%;
-  outline: none;
-  border: none;
-  padding: 5px;
-}
-
-.srchicon{
-  background-color: rgb(250, 231, 231);
-  display: block;
-  padding: 4px 5px;
   cursor: pointer;
 }
 
-.nav a{
-  color: #ffffff;
-  transition: color 0.3s ease;
+#hamburger-icon div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-.nav a:hover {
-  color: #1A4F7A; /* Orange on hover */
+/* Hamburger Animation */
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.nav ul li.selected{
-  color: #1c73b1;
+.open .bar2 {
+  opacity: 0;
 }
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 39px;
+  right: 0;
+  width: 80%;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  opacity: 0;
+  transform: translateX(80px);
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 1000;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+  list-style: none;
+  padding-left: 0;
+}
+
+.mobile-menu li {
+  margin: 15px 0;
+  list-style-type: none;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mobile Menu - Opened */
+.open .mobile-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Backdrop */
+#menu-backdrop {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.open ~ #menu-backdrop {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
 
 body {
   background-image: url("images/GRAVITY_BGG.png");
@@ -205,9 +296,10 @@ body {
 }
 .scroller {
   padding-block: 8px;
-  border-block: 1px solid;
+  
   overflow: hidden;
   user-select: none;
+  border-top: 1px solid;
 
   --gap: 25px;
   display: flex;
@@ -243,9 +335,10 @@ body {
 
 .main_slide img {
   margin-top: 50px;
-  width: 600px;         /* change width */
+  width: 550px;         /* change width */
   height: auto;         /* auto height keeps image ratio */
   padding-top: 2vw;
+  margin-left: 138px;
 }
 
 .main_slide .red_button {
@@ -368,6 +461,8 @@ body {
   transition: transform 0.3s;
   margin-bottom: 50px;
   text-align: justify;
+  text-justify: inter-word; /* Ensures cleaner spacing between words */
+  hyphens: auto; 
 }
 
 .foundation-card:hover {
@@ -430,6 +525,7 @@ body {
 
 .about-maincard p{
   font-size: 17px;
+  color: #444;
 }
 
 .about-card {
@@ -437,7 +533,7 @@ body {
   padding: 30px 25px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  width: 325px;
+  width: 350px;
   max-width: 90%;
   transition: transform 0.3s;
   margin-bottom: 50px;
@@ -458,6 +554,8 @@ body {
   line-height: 1.6;
   color: #444;
   text-align: justify;
+  text-justify: inter-word; /* Ensures cleaner spacing between words */
+  hyphens: auto; 
 }
 
 .Event-items{
@@ -495,7 +593,7 @@ body {
   width: 200px; /* or any size you want */
   height: auto; /* maintains aspect ratio */
 }
-.item{
+.menu .item{
   font-size: 16px;
   text-align: center;
   background: #ffffff;
@@ -504,11 +602,12 @@ body {
   width: 280px;
   height: 500px;
   padding: 20px;
+  padding-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 70px;
 }
 
-.item:hover {
+.item:hover{
   transform: translateY(-6px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
@@ -531,6 +630,7 @@ body {
   font-size: 12px;
   margin-top: 15px;
   margin-bottom: 10px;
+  color: #444;
 }
 
 .Event-items .red_button{
@@ -637,9 +737,6 @@ body {
   animation: scroll 60s linear infinite;
 }
 
-.allAchievements:hover ul {
-  animation-play-state: paused;
-}
 
 
 
@@ -659,13 +756,12 @@ body {
 
     .scroll-list {
       display: flex;
-      padding: 20px 0;
       margin: 0;
       list-style: none;
     }
-    .scroll-wrapper:hover .scroll-track {
-      animation-play-state: paused;
-    }
+    .scroll-wrapper:has(.item:hover) .scroll-track {
+  animation-play-state: paused;
+}
     .scroll-track li {
       min-width: 300px;
       margin-right: 20px;
@@ -709,7 +805,7 @@ body {
       flex-shrink: 0;
     }
 
-.scroll-wrapper-right {
+    .scroll-wrapper-right {
       width: 100%;
       overflow: hidden;
       position: relative;
@@ -726,13 +822,12 @@ body {
 
     .scroll-list-right {
       display: flex;
-      padding: 20px 0;
       margin: 0;
       list-style: none;
     }
-    .scroll-wrapper:hover .scroll-track-right {
-      animation-play-state: paused;
-    }
+    .scroll-wrapper:has(.item:hover) .scroll-track-right {
+  animation-play-state: paused;
+}
     .scroll-track-right li {
       min-width: 300px;
       margin-right: 20px;
@@ -752,7 +847,25 @@ body {
 
 
 
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #dce4ea;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
 
+#backToTopBtn:hover {
+  background-color: #1A4F7A;
+}
 
 
 
@@ -791,6 +904,7 @@ body {
 
 .memoryscroller img{
   width: 400px;
+  border-radius: 20px;
 }
 
 
@@ -817,7 +931,7 @@ body {
   animation: scroll 60s linear infinite;
 }
 
-.memoryscroller:hover ul {
+.memoryscroller:has(.memoryitem:hover) ul {
   animation-play-state: paused;
 }
 
@@ -898,187 +1012,41 @@ body {
 }
 
 
-@media only screen and (max-width:764px){
-  .header .nav, .header .account{
+/* Responsive */
+@media only screen and (max-width: 400px) {
+  header {
+  height: 40px;
+}
+  nav {
     display: none;
   }
-  .search{
-    width: 60vw;
-  }
-  .bar{
+
+  #hamburger-icon {
     display: block;
-    cursor: pointer;
-  }
-  .headerbar{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    bottom: 0;
-    right: -100%;
-    transition: all 0.5s;
-    background-color: rgb(248,232,217);
   }
 
-  .headerbar .account ,.headerbar .nav{
-    display: block;
-    font-size: 18px;
+  .logo p{
+  padding-right: 10px;
+  height: 25px;
+  margin-top: 4px;
   }
-  .bar .fa-xmark{
-    display: none;
-    top: 20px;
-    right: 5vw;
-    position: absolute;
-    font-size: 25px;
-  }
-  .headerbar .nav ul{
-    flex-direction: column;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .header .nav li{
-    width: 96vw;
-    margin: 10px 0;
-    padding: 15px 30px;
-    box-shadow: 0 2px 15px rgb(252, 196,124);
-    font-size: 15px;
-    margin-top: 5px;
-  }
-  .headerbar .account{
-    line-height: 40px;
-    margin-top: 60px;
-    background-color: rgb(252, 218,182);
-    padding: 15px;
-  }
-  .headerbar .account ul{
-    justify-content: space-between;
-  }
+
+.Gravity_logo img{
+  width: 100px;
+  padding-right: 10px;
+  height: auto;
+  margin-top: 5px;
 }
 
-@media only screen and (max-width:550px){
-  .main_slide div:nth-child(1){
-    font-size: 20px;
-  }
-
-  .main_slide div:nth-child(1) p{
-    padding-top: 5px;
-    margin: 10px 0;
-    font-size: 15px;
-  }
-  .red_button{
-    margin-top: 10px;
-    width: 120px;
-    line-height: 30px;
-    font-size: 12px;
-    padding: 0 10px;
-  }
-  .main_slide div:nth-child(1) span{
-    text-underline-offset: 5px;
-  }
-  .main_slide div:nth-child(2) img{
-    width: 70vw;
-  }
+.logo{
+  display: flex;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width:900px){ 
-  .food_items h1{
-    font-size: 35px;
-    margin-left: 20px;
-    color: rgb(252,77, 8);
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    text-decoration-color: rgb(252, 176, 34);
-  }
-  .food_items .menu{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .item{
-    width: 150px;
-    padding: 25px;
-    text-align: center;
-  }
-  
-  .item img{
-    width: 100px;
-    margin-bottom: 15px;
-  }
-  .item h2{
-    font-size: 15px;
-  }
-  .item p{
-    font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .food_items .red_button{
-    position: absolute;
-    bottom: 0;
-    width: 140px;
-    margin-left: 40%;
-  }
+.Mcet_logo img{
+  padding-right: 20px;
+  width: 110px;
+  height: auto;
+  margin-top: 2px;
 }
-
-@media only screen and (max-width:330px){ 
-  .food_items h1{
-    font-size: 20px;
-    margin-left: 20px;
-    color: rgb(252,77, 8);
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    text-decoration-color: rgb(252, 176, 34);
-  }
-  .food_items .menu{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .item{
-    width: 150px;
-    padding: 25px;
-    text-align: center;
-  }
-  
-  .item img{
-    width: 100px;
-    margin-bottom: 15px;
-  }
-  .item h2{
-    font-size: 15px;
-  }
-  .item p{
-    font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .food_items .red_button{
-    font-size: 13px;
-    position: absolute;
-    margin-bottom: 30px;
-    width: 140px;
-    margin-left: 25%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .cust_fb .content {
-    flex-direction: column;
-    text-align: center; 
-  }
-
-  .cust_fb .content p {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .cust_fb .content img {
-    max-width: 100%;
-  }
 }

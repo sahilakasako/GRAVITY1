@@ -141,6 +141,26 @@ header {
   color: #1c73b1;
 }
 
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #dce4ea;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: #1A4F7A;
+}
+
 .home{
   padding: 0 7vw;
 }

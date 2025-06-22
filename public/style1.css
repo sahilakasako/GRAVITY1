@@ -1,0 +1,187 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  height: 60px;
+  padding: 0 7vw;
+  background-color: #1f1d1dcf;
+  border-bottom: 2px solid #00000096;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.763);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+header {
+  transition: all 0.5s;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header ul{
+  display: flex;
+  align-items: center;
+  color: #f5f2f2;
+}
+
+.header ul li:hover{
+  color: #2b74af;
+  transition: color 0.3s ease;
+}
+
+.logo p{
+  padding-right: 20px;
+  height: 40px;
+  margin-top: 4px;
+}
+
+.Gravity_logo img{
+  width: 150px;
+  padding-right: 20px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Mcet_logo img{
+  padding-right: 20px;
+  width: 170px;
+  height: auto;
+}
+
+#brand a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+/* Hamburger Icon */
+#hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Hamburger Animation */
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 80%;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  opacity: 0;
+  transform: translateX(80px);
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 1000;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+  list-style: none;
+  padding-left: 0;
+}
+
+.mobile-menu li {
+  margin: 15px 0;
+  list-style-type: none;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mobile Menu - Opened */
+.open .mobile-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Backdrop */
+#menu-backdrop {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.open ~ #menu-backdrop {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}

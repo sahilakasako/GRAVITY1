@@ -4,7 +4,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <!-- The above code is to link with css file-->
-  <link rel="icon" href="%PUBLIC_URL%/images/gravity_fav.png" type="image/x-icon">
+  <link rel="icon" href="images/gravity_fav.png" type="image/x-icon">
   <!-- The above code is for Favicon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -16,146 +16,41 @@
   <meta name="description" content="Web site created using create-react-app" />
   <script src="App1.js"></script>
   <!-- The above code are default codes-->
-  <title>Gravity-CIET | Home</title>
+  <title>Gravity-CIET | Home</title><script defer src="App1.js"></script>
 </head>
-<style>
-  body {
-    background-image: url("images/Gravity_bg.png");
-  }
-</style>
-
 <body>
-  <!-- The video -->
-  <!-- <video autoplay muted loop id="myVideo">
-      <source src="%PUBLIC_URL%/images/rain1.mp4" type="video/mp4">
-    </video>
-    <img src="%PUBLIC_URL%/images/Gravity_bg.png" alt="background">-->
+
   <header>
-    <div class="header">
-      <div class="headerbar"><!-- Tablet view-->
-
-        <div class="account"><!-- Account consists of Home, search, searchinput-->
-          <ul>
-            <a href="#">
-              <li>
-                <i class="fa-solid fa-house-chimney"></i>
-              </li>
-            </a>
-            <!-- The above code is home icon-->
-            <a href="#">
-              <li>
-                <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
-              </li>
-            </a>
-            <!-- The above code is for search icon-->
-            <div class="search" id="searchinput1">
-              <input type="search">
-              <i class="fa-solid fa-magnifying-glass srchicon"></i>
-            </div>
-            <a href="#">
-              <li>
-                <i class="fa-solid fa-user" id="user-mb"></i>
-              </li>
-            </a>
-            <!-- The above code is profile icon-->
-          </ul>
-        </div>
-
-
-        <div class="nav">
-          <ul>
-          <a href="index.html">
-            <li class="selected">Home</li>
-          </a>
-          <a href="team.html">
-            <li>Our Team</li>
-          </a>
-          <a href="startup1.html">
-            <li>StartUps</li>
-          </a>
-          <a href="Gallery.html">
-            <li>Gallery</li>
-          </a>
-          <a href="Events.html">
-            <li>Events</li>
-          </a>
-        </ul>
-        </div>
-        <!-- The above code is for navigation bar(tablet view)-->
-      </div>
-      <!-- The above code is for TABLET VIEW CONFIGURATION-->
-
-      <div class="logo">
+    <div id="brand"><div class="logo">
         <div class="Gravity_logo"><a href="https://gravitymcet.com/"><img src="images/gravity_logo.png" alt="Gravity"></a></div>
         <p style="border-left: 2px solid rgb(224, 217, 217);"></p>
         <div class="Mcet_logo"><a href="https://mcet.ac.in/"><img src="images/MCET_logoo.png" alt="MCET"></a></div> 
-      </div>
-      <!-- The above code is for MCET And gravity logo-->
+      </div></div>
+    <nav>
+      <ul>
+        <li class="selected"><a href="index.html">Home</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="startup1.html">StartUps</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Events.html">Events</a></li>
+      </ul>
+    </nav>
 
-
-      <div class="bar">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark" id="hdcross"></i>
-      </div>
-      <!-- The above code is for symbol of menu to show-->
-
-
-      <div class="nav"> <!--Desktop view-->
-        <ul>
-          <a href="index.html">
-            <li class="selected">Home</li>
-          </a>
-          <a href="team.html">
-            <li>Our Team</li>
-          </a>
-          <a href="startup1.html">
-            <li>StartUps</li>
-          </a>
-          <a href="Gallery.html">
-            <li>Gallery</li>
-          </a>
-          <a href="Events.html">
-            <li>Events</li>
-          </a>
-        </ul>
-      </div>
-
-      <!-- The above code is for DEFAULT navigation bar(desktop view)-->
-      <div class="account"> <!-- Account consists of Home, search, searchinput-->
-        <ul>
-          <a href="#">
-            <li>
-              <i class="fa-solid fa-house-chimney"></i>
-            </li>
-          </a>
-          <!-- The above code is for home icon-->
-          <a href="#">
-            <li>
-              <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
-            </li>
-          </a>
-          <!-- The above code is for search icon-->
-          <div class="search" id="searchinput2">
-            <input type="search">
-            <i class="fa-solid fa-magnifying-glass srchicon"></i>
-          </div>
-          <!-- The above code is for typing what to search-->
-          <a href="#">
-            <li>
-              <i class="fa-solid fa-user" id="user-lap"></i>
-            </li>
-          </a>
-          <!-- The above code is for profile icon-->
-        </ul>
-      </div>
-      <!-- The above code is for DEFAULT VIEW(desktop view)-->
-
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li class="selected"><a href="index.html">Home</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="startup1.html">StartUps</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Events.html">Events</a></li>
+      </ul>
     </div>
   </header>
-  <!-- The above code is for BEING THE HEAD OF THE SITE-->
 
-  <script src="App1.js"></script>
-  <!-- The above code is to link with js file-->
+  <div id="menu-backdrop" onclick="closeMobileMenu()"></div>
 
   <div class="home">
   <div class="home_mainpage">
@@ -164,12 +59,38 @@
         <h1><pre><!-- Welcome to <span>Gravity</span> — -->
 <span>C</span>entre
 <span>I</span>nnovation, 
-<span>E</span>ntrepreneurship and 
+<span>E</span>ntrepreneurship & 
 <span>T</span>echnology</pre></h1>
         <!-- <p>Great ventures are born on rough roads- its the rough journeys that shape the most resilient Leaders and fuel the most Groundbreaking Innovations.</p>-->
 
-        <a href="team.html"><button class="red_button">Our Team <i class="fa-solid fa-arrow-right-long"></i></button></a>
+        <button class="red_button" onclick="scrollToAbout()">About Us</button>
+        <button class="red_button" onclick="scrollToContact()">Contact Us</button>
+        <script>
+          function scrollToAbout() {
+            document.getElementById("About").scrollIntoView({ behavior: "smooth" });
+          }
+          function scrollToContact() {
+            document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
+          }
+        </script>
+
       </div>
+
+<!--BACK TO TOP BUTTON-->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fas fa-angle-double-up"></i></button>
+    <script>
+      const btn = document.getElementById("backToTopBtn");
+
+      // Show button after scrolling down 100px
+      window.onscroll = function () {
+        btn.style.display = window.scrollY > 100 ? "block" : "none";
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+<!--BACK TO TOP BUTTON FINISHES-->
       <!-- The above code is for button and content-->
       <div class="mainlogo">
         <img src="images/Gravitydarklogo.png" alt="Gravity">
@@ -228,7 +149,7 @@
         </div>
       </div>
 
-      <div class="second">
+      <div class="second" id="About">
         <div class="about-section">
           <h1>Ab<span>out </span>Us</h1>
           <div class="about-cards">
@@ -292,7 +213,7 @@
             <div>
               <img src="images/Lastest_Event1.jpg" alt="Hackon 2.0" class="event-image">
               <h2>Hackon 2.0</h2>
-              <p>An exhilarating 48-hour Hackathon awaits - where creativity ignites, teams collaborate and groundbreaking Ideas transform into Real Solutions.</p>
+              <p>An exhilarating 48-hour Hackathon awaits- where creativity ignites, teams collaborate and groundbreaking Ideas transform into Real Solutions.</p>
             </div>
           </div>
         </a>
@@ -302,7 +223,7 @@
             <div>
               <img src="images/Latest_Event2.jpg" alt="Explora'25" class="event-image">
               <h2>Explora'25</h2>
-              <p>A five-day hands-on learning program that provides students with practical exposure and technical understanding of the electric mobility sector.
+              <p>A five-day hands-on learning program that provides students with practical Exposure and technical understanding of the Electric and Hybrid mobility sector.
               </p>
             </div>
           </div>
@@ -313,7 +234,7 @@
             <div>
               <img src="images/Latest_Event3.jpg" alt="Embarka" class="event-image">
               <h2>Embarka</h2>
-              <p>It is a One-Day Orientation program Organized for the μlearn Student Coordinators and Execom Members. It aims to build strong communication bridges within the μlearn Community while enduring essential mentoring and leadership Skills.
+              <p>It is a One-Day Orientation program Organized for the μlearn Student Coordinators and Execom Members. It aims to build strong μlearn Community within the campus.
               </p>
             </div>
           </div>
@@ -324,7 +245,8 @@
     <!-- The above code is for SPECIALS-->
 
     <div class="Achievements">
-    <h1>Our M<span>iles</span>tones</h1>
+      
+    <h1>Achi<span>evem</span>ents</h1>
     <!--LEFT-->
     <div class="scroll-wrapper">
       <div class="scroll-track">
@@ -345,7 +267,7 @@
               <div class="item">
                 <div>
                   <img src="images/Achievement2.jpeg" alt="Achievement" class="event-image">
-                  <p>An inspiring example of what’s possible is being proved by our beloved DR. Pradeep Rajendran R, representing GRAVITY- CIET have received the Top-Performing IEDC and accredited IEDC in the state, from the Honorable Minister Education, Prof. R. Bindu in the year 2022.
+                  <p>An inspiring example of what’s possible is being proved by our beloved Dr. Pradeep Raj R, representing GRAVITY- CIET have received the Top-Performing IEDC and accredited IEDC in the state, from the Honorable Minister Education, Prof. R. Bindu in the year 2022.
                   </p>
                 </div>
               </div>
@@ -356,7 +278,7 @@
               <div class="item">
                 <div>
                   <img src="images/Achievement3.jpeg" alt="Achievement" class="event-image">
-                  <p>It is a great achievement for GRAVITY | CIET to honour DR. Pradeep Rajendran to be honored as the top performing Innovation Ambassador by the MIC, Ministry of Education (MoE), Government of India.
+                  <p>It is a great achievement for GRAVITY | CIET to honour Dr. Pradeep Raj R to be honored as the top performing Innovation Ambassador by the MIC, Ministry of Education (MoE), Government of India.
                   </p>
                 </div>
               </div>
@@ -427,7 +349,7 @@
               <div class="item">
                 <div>
                   <img src="images/Achievement2.jpeg" alt="Achievement" class="event-image">
-                  <p>An inspiring example of what’s possible is being proved by our beloved DR. Pradeep Rajendran R, representing GRAVITY- CIET have received the Top-Performing IEDC and accredited IEDC in the state, from the Honorable Minister Education, Prof. R. Bindu in the year 2022.
+                  <p>An inspiring example of what’s possible is being proved by our beloved Dr. Pradeep Raj R, representing GRAVITY- CIET have received the Top-Performing IEDC and accredited IEDC in the state, from the Honorable Minister Education, Prof. R. Bindu in the year 2022.
                   </p>
                 </div>
               </div>
@@ -438,7 +360,7 @@
               <div class="item">
                 <div>
                   <img src="images/Achievement3.jpeg" alt="Achievement" class="event-image">
-                  <p>It is a great achievement for GRAVITY | CIET to honour DR. Pradeep Rajendran to be honored as the top performing Innovation Ambassador by the MIC, Ministry of Education (MoE), Government of India.
+                  <p>It is a great achievement for GRAVITY | CIET to honour Dr. Pradeep Raj R to be honored as the top performing Innovation Ambassador by the MIC, Ministry of Education (MoE), Government of India.
                   </p>
                 </div>
               </div>
@@ -682,362 +604,32 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-<!--
-    <div class="Achievements">
-      <h1>Our M<span>iles</span>tones</h1>
-      <div class="scroll-container">
-        <ul class="scroll-content">
-          <li>
-            <a href="https://www.linkedin.com/in/profpradeepraj/">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement1.jpeg" alt="Achievement" class="event-image">
-                  <p>In recognition of 10 years of unwavering Commitment, Visionary Leadership and Outstanding contributions in nurturing Innovation, Entrepreneurship and startup ecosystem in association with Kerala startup mission through the Innovation centre of MCET.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/posts/profpradeepraj_innovation-entrepreneurship-iedc-activity-7311775635008274433-tYTz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement2.jpeg" alt="Achievement" class="event-image">
-                  <p>An inspiring example of what’s possible is being proved by our beloved DR. Pradeep Rajendran R, representing GRAVITY- CIET have received the Top-Performing IEDC and accredited IEDC in the state, from the Honorable Minister Education, Prof. R. Bindu in the year 2022.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/posts/profpradeepraj_as-an-innovation-ambassador-im-committed-activity-7204821950215458817-v6bg?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement3.jpeg" alt="Achievement" class="event-image">
-                  <p>It is a great achievement for GRAVITY | CIET to honour DR. Pradeep Rajendran to be honored as the top performing Innovation Ambassador by the MIC, Ministry of Education (MoE), Government of India.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement4.jpg" alt="Achievement" class="event-image">
-                  <p>Team Evointec has secured First Position in Ideathon Competition conducted by Rajadhani Institute of Engineering and Technology.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement5.jpg" alt="Achievement" class="event-image">
-                  <p>Team Evointec has secured Third Prize in Ideathon at KTU Tech Fest held at Ahalia School of Engineering and Technology 
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement6.jpg" alt="Achievement" class="event-image">
-                  <p>IIC at MCET undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2020-21.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement7.jpg" alt="Achievement" class="event-image">
-                  <p>MCET has established Institution Innovation Council (IIC) as per the Norms of Innovation Cell, Ministry of HRD, Govt. of India on 21st November, 2018.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement8.jpg" alt="Achievement" class="event-image">
-                  <p>IIC at MCET had undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2022-23.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement9.jpg" alt="Achievement" class="event-image">
-                  <p>MCET has been adjudged as the Second Runner-up in the Top Performer in District - Thiruvananthapuram category in the Innovators' Premier League 2021 hosted by Kerala Startup Mission from 18 Sept 2021 to 30 Dec 2021
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement10.jpg" alt="Achievement" class="event-image">
-                  <p>Kerala Startup Mission is hereby recognizing the IEDC in MCET as a Technology Business Incubator (TBI).
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement11.jpg" alt="Achievement" class="event-image">
-                  <p>Awarded to the TOP Performing IEDC, MCET Kerala Startup Mission (KSUM) is pleased to declare the IEDC as the Top Performer during the FY 2019-2021.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement12.jpg" alt="Achievement" class="event-image">
-                  <p>IIC at MCET had undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2021-22.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement13.jpg" alt="Achievement" class="event-image">
-                  <p>IIC established at MCET had undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2019-20.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>  
-        </ul>
-
-        <ul aria-hidden="true">
-          <li>
-            <a href="https://www.linkedin.com/in/profpradeepraj/">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement1.jpeg" alt="Achievement" class="event-image">
-                  <p>In recognition of 10 years of unwavering Commitment, Visionary Leadership and Outstanding contributions in nurturing Innovation, Entrepreneurship and startup ecosystem in association with Kerala startup mission through the Innovation centre of MCET.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/posts/profpradeepraj_innovation-entrepreneurship-iedc-activity-7311775635008274433-tYTz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement2.jpeg" alt="Achievement" class="event-image">
-                  <p>An inspiring example of what’s possible is being proved by our beloved DR. Pradeep Rajendran R, representing GRAVITY- CIET have received the Top-Performing IEDC and accredited IEDC in the state, from the Honorable Minister Education, Prof. R. Bindu in the year 2022.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/posts/profpradeepraj_as-an-innovation-ambassador-im-committed-activity-7204821950215458817-v6bg?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement3.jpeg" alt="Achievement" class="event-image">
-                  <p>It is a great achievement for GRAVITY | CIET to honour DR. Pradeep Rajendran to be honored as the top performing Innovation Ambassador by the MIC, Ministry of Education (MoE), Government of India.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement4.jpg" alt="Achievement" class="event-image">
-                  <p>Team Evointec has secured First Position in Ideathon Competition conducted by Rajadhani Institute of Engineering and Technology.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement5.jpg" alt="Achievement" class="event-image">
-                  <p>Team Evointec has secured Third Prize in Ideathon at KTU Tech Fest held at Ahalia School of Engineering and Technology 
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement6.jpg" alt="Achievement" class="event-image">
-                  <p>IIC at MCET undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2020-21.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement7.jpg" alt="Achievement" class="event-image">
-                  <p>MCET has established Institution Innovation Council (IIC) as per the Norms of Innovation Cell, Ministry of HRD, Govt. of India on 21st November, 2018.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement8.jpg" alt="Achievement" class="event-image">
-                  <p>IIC at MCET had undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2022-23.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement9.jpg" alt="Achievement" class="event-image">
-                  <p>MCET has been adjudged as the Second Runner-up in the Top Performer in District - Thiruvananthapuram category in the Innovators' Premier League 2021 hosted by Kerala Startup Mission from 18 Sept 2021 to 30 Dec 2021
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement10.jpg" alt="Achievement" class="event-image">
-                  <p>Kerala Startup Mission is hereby recognizing the IEDC in MCET as a Technology Business Incubator (TBI).
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement11.jpg" alt="Achievement" class="event-image">
-                  <p>Awarded to the TOP Performing IEDC, MCET Kerala Startup Mission (KSUM) is pleased to declare the IEDC as the Top Performer during the FY 2019-2021.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement12.jpg" alt="Achievement" class="event-image">
-                  <p>IIC at MCET had undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2021-22.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-          
-          <li >
-            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
-              <div class="item">
-                <div>
-                  <img src="images/Achievement13.jpg" alt="Achievement" class="event-image">
-                  <p>IIC established at MCET had undertaken various activities prescribed by Innovation Cell, Ministry of Education, Govt. of India to promote Innovation and Start-up in campus during the IIC calendar year 2019-20.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li> 
-        </ul>
-        -->
     
     <div class="Gallery">
       <h1>Our Ca<span>ndid</span> Gallery</h1>
       <div class="memoryscroller">
         <ul>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory1.jpg" alt="Memory1" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory2.jpg" alt="Memory 2" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory3.jpeg" alt="Memory 3" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory4.jpg" alt="Memory 4" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory5.jpg" alt="Memory 5" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory6.jpg" alt="Memory 6" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley111.jpeg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley110.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley98.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley99.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley115.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley116.jpg" alt="Our Candid Pics" /></li></div>
 
         </ul>
         <ul aria-hidden="true">
-          <div class="memoryitem"><li class="memory"><img src="images/Memory1.jpg" alt="Memory1" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory2.jpg" alt="Memory 2" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory3.jpeg" alt="Memory 3" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory4.jpg" alt="Memory 4" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory5.jpg" alt="Memory 5" /></li></div>
-          <div class="memoryitem"><li class="memory"><img src="images/Memory6.jpg" alt="Memory 6" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley111.jpeg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley110.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley98.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley99.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley115.jpg" alt="Our Candid Pics" /></li></div>
+          <div class="memoryitem"><li class="memory"><img src="images/Galley116.jpg" alt="Our Candid Pics" /></li></div>
         </ul>
         
       </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="Contact">
       <div class="footer-container">
         <div class="footer-column">
           <h2><span>Gravity </span> CIET</h2>
@@ -1053,7 +645,7 @@
         </div>
 
         <div class="footer-column">
-          <h3>ABOUT</h3>
+          <h3>About</h3>
           <p>About Us</p>
           <p>Vision</p>
           <p>Mission</p>
@@ -1072,13 +664,13 @@
         </div>
 
         <div class="footer-column">
-          <h3>TEAM</h3>
+          <h3>Team</h3>
           <p>Execom Members</p>
           <p>μLearn Student Coordinators</p>
         </div>
 
         <div class="footer-column">
-          <h3>CONTACT</h3>
+          <h3>Contact</h3>
           <p>iedc@mcet.ac.in</p>
           <p>Nodal Officer: +91 94464 94938</p>
           <p>CEO: +91 73061 14105</p>

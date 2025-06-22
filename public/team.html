@@ -148,6 +148,21 @@
     </div>
   </header>
   <!-- The above code is for BEING THE HEAD OF THE SITE-->
+   <!--BACK TO TOP BUTTON-->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fas fa-angle-double-up"></i></button>
+    <script>
+      const btn = document.getElementById("backToTopBtn");
+
+      // Show button after scrolling down 100px
+      window.onscroll = function () {
+        btn.style.display = window.scrollY > 100 ? "block" : "none";
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+<!--BACK TO TOP BUTTON FINISHES-->
     <div class="home">
     <div class="food_items">
       <h1>Meet <span>Our Team</span></h1>

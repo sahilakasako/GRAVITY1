@@ -1,0 +1,407 @@
+<div class="team_cards">
+      
+      <div class="event-card">
+        <img src="images/Event19.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Hackon 2.0</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/Event16.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Explora'25</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card-box">
+        <img src="images/Event18.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Yukti Innovation Challenge</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="event-card">
+        <img src="images/Event19.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>MINDSPIRE 💡</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+       -->
+
+      <div class="event-card">
+        <img src="images/Event17.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Embarka</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/Event15.png" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>3 Day Orientation Program</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/Event14.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Faculty Developmet Programme</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/Event13.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Engine Out Completely</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/Event12.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Patent Wala Idea</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="images/Event11.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>How to Wirte and <br>Review Technical Articles</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="images/Event10.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>One Day Orientation Camp</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="images/Event8.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Exposure Visit</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card-box">
+        <img src="images/Event7.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>PST</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="images/Event6.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Be Yourself</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="images/Event5.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Bootcamp- V³</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="images/Event4.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>Echo</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="images/Event3.jpg" alt="Mindspire Event" class="event-image" />
+        <div class="event-overlay">
+          <div class="event-info">
+            <h3>MINDSPIRE</h3>
+            <p>📅 30 & 31 Jan, 2025<br>
+              🕗 08:30 AM - 03:30 PM<br>
+              📍 Civil Mini Auditorium<br>
+              🔥 Ideation & Design Thinking Workshop<br>
+              🎯 For First Years Only
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <header>
+    <div class="header">
+      <div class="headerbar"><!-- Tablet view-->
+
+        <div class="account"><!-- Account consists of Home, search, searchinput-->
+          <ul>
+            <a href="#">
+              <li>
+                <i class="fa-solid fa-house-chimney"></i>
+              </li>
+            </a>
+            <!-- The above code is home icon-->
+            <a href="#">
+              <li>
+                <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
+              </li>
+            </a>
+            <!-- The above code is for search icon-->
+            <div class="search" id="searchinput1">
+              <input type="search">
+              <i class="fa-solid fa-magnifying-glass srchicon"></i>
+            </div>
+            <a href="#">
+              <li>
+                <i class="fa-solid fa-user" id="user-mb"></i>
+              </li>
+            </a>
+            <!-- The above code is profile icon-->
+          </ul>
+        </div>
+
+
+        <div class="nav">
+          <ul>
+          <a href="index.html">
+            <li class="selected">Home</li>
+          </a>
+          <a href="team.html">
+            <li>Our Team</li>
+          </a>
+          <a href="startup1.html">
+            <li>StartUps</li>
+          </a>
+          <a href="Gallery.html">
+            <li>Gallery</li>
+          </a>
+          <a href="Events.html">
+            <li>Events</li>
+          </a>
+        </ul>
+        </div>
+        <!-- The above code is for navigation bar(tablet view)-->
+      </div>
+      <!-- The above code is for TABLET VIEW CONFIGURATION-->
+
+      <div class="logo">
+        <div class="Gravity_logo"><a href="https://gravitymcet.com/"><img src="images/gravity_logo.png" alt="Gravity"></a></div>
+        <p style="border-left: 2px solid rgb(224, 217, 217);"></p>
+        <div class="Mcet_logo"><a href="https://mcet.ac.in/"><img src="images/MCET_logoo.png" alt="MCET"></a></div> 
+      </div>
+      <!-- The above code is for MCET And gravity logo-->
+
+
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark" id="hdcross"></i>
+      </div>
+      <!-- The above code is for symbol of menu to show-->
+
+
+      <div class="nav"> <!--Desktop view-->
+        <ul>
+          <a href="index.html">
+            <li class="selected">Home</li>
+          </a>
+          <a href="team.html">
+            <li>Our Team</li>
+          </a>
+          <a href="startup1.html">
+            <li>StartUps</li>
+          </a>
+          <a href="Gallery.html">
+            <li>Gallery</li>
+          </a>
+          <a href="Events.html">
+            <li>Events</li>
+          </a>
+        </ul>
+      </div>
+
+      <!-- The above code is for DEFAULT navigation bar(desktop view)-->
+      <div class="account"> <!-- Account consists of Home, search, searchinput-->
+        <ul>
+          <a href="#">
+            <li>
+              <i class="fa-solid fa-house-chimney"></i>
+            </li>
+          </a>
+          <!-- The above code is for home icon-->
+          <a href="#">
+            <li>
+              <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
+            </li>
+          </a>
+          <!-- The above code is for search icon-->
+          <div class="search" id="searchinput2">
+            <input type="search">
+            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+          </div>
+          <!-- The above code is for typing what to search-->
+          <a href="#">
+            <li>
+              <i class="fa-solid fa-user" id="user-lap"></i>
+            </li>
+          </a>
+          <!-- The above code is for profile icon-->
+        </ul>
+      </div>
+      <!-- The above code is for DEFAULT VIEW(desktop view)-->
+
+    </div>
+  </header>

@@ -143,6 +143,22 @@
     </div>
   </header>
   <!-- The above code is for BEING THE HEAD OF THE SITE-->
+
+  <!--BACK TO TOP BUTTON-->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fas fa-angle-double-up"></i></button>
+    <script>
+      const btn = document.getElementById("backToTopBtn");
+
+      // Show button after scrolling down 100px
+      window.onscroll = function () {
+        btn.style.display = window.scrollY > 100 ? "block" : "none";
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+<!--BACK TO TOP BUTTON FINISHES-->
     <div class="home">
       <div class="food_items">
         <h1>Start<span>Ups</span></h1>
@@ -152,7 +168,7 @@
          <h2>20<span>25</span></h2>
         <div class="menu">
           <div class="item">
-            <img src="images/GrowFlow_logo.png" alt="GeekWorks Studio" width="400px">
+            <img src="images/Startup.png" alt="GeekWorks Studio" width="400px">
             <a href="#" target="_blank"><button class="red_button">Meet Them</button></a>
             <div class="content">
               <h2>GeekWorks Studio</h2>
@@ -175,6 +191,20 @@
               <p>Founders: Fousiya Kabeer, Gouri S Nair, Archa C G, Swathy Lekshmy Bijulal, Rashly S Rasheed & Sarga S.</p>
             </div>
           </div>
+
+          <div class="item">
+            <img src="images/Whitepaper_logo.jpeg" alt="White Paper" width="400px">
+            <a href="linkedin.com/in/profpradeepraj" target="_blank"><button class="red_button">Meet Them</button></a>
+            <div class="content">
+              <h2>White Paper (Faculty Startup)</h2>
+              <p>I Empower future professionals through innovation, soft skills, entrepreneurship, and technology, this initiative nurtures critical thinking, design thinking, and public speaking. With interactive workshops, expert mentorship, and project-based learning, we’re building the next generation of changemakers. Join us in shaping a dynamic, forward-thinking professional community ready to lead the future.
+              
+              By fostering creativity, resilience, and a growth mindset, we aim to bridge the gap between education and industry demands. This movement is more than a program—it’s a call to action for transformative learning and leadership.
+              </p>
+              <p>Founder: Dr. Pradeep Raj R</p>
+            </div>
+          </div>
+          
         </div>
           <!--2023-->
           <h2>20<span>23</span></h2>
