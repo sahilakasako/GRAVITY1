@@ -62,17 +62,19 @@
 <span>E</span>ntrepreneurship & 
 <span>T</span>echnology</pre></h1>
         <!-- <p>Great ventures are born on rough roads- its the rough journeys that shape the most resilient Leaders and fuel the most Groundbreaking Innovations.</p>-->
+        
+          <button class="red_button" onclick="scrollToAbout()">About Us</button>
+          <button class="red_button" onclick="scrollToContact()">Contact Us</button>
+          <script>
+            function scrollToAbout() {
+              document.getElementById("About").scrollIntoView({ behavior: "smooth" });
+            }
+            function scrollToContact() {
+              document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
+            }
+          </script>
+        
 
-        <button class="red_button" onclick="scrollToAbout()">About Us</button>
-        <button class="red_button" onclick="scrollToContact()">Contact Us</button>
-        <script>
-          function scrollToAbout() {
-            document.getElementById("About").scrollIntoView({ behavior: "smooth" });
-          }
-          function scrollToContact() {
-            document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
-          }
-        </script>
 
       </div>
 
@@ -94,8 +96,28 @@
       <!-- The above code is for button and content-->
       <div class="mainlogo">
         <img src="images/Gravitydarklogo.png" alt="Gravity">
+        <div class="phn_welcome">
+          <h1>Welcome to <br>
+          <span>C</span>entre <br>
+          <span>I</span>nnovation, <br>
+          <span>E</span>ntrepreneurship & <br> 
+          <span>T</span>echnology</h1>
+        </div>
+        <div class="buttons">
+          <button class="blue_button" onclick="scrollToAbout()">About Us</button>
+          <button class="blue_button" onclick="scrollToContact()">Contact Us</button>
+          <script>
+            function scrollToAbout() {
+              document.getElementById("About").scrollIntoView({ behavior: "smooth" });
+            }
+            function scrollToContact() {
+              document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
+            }
+          </script>
+        </div>
       </div>
       <!-- The above code is image of first food-->
+        
     </div>
     <!-- The above code is for contents in home page-->
     <h1>We Have Proudly Worked With</h1>
