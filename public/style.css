@@ -1339,7 +1339,8 @@ body {
 
 .about-maincard{
   background-color: #f2eeee;
-  padding: 30px 25px;
+  padding: 0px 25px;
+  padding-top: 20px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   max-width: 90%;
@@ -1358,6 +1359,35 @@ body {
   hyphens: auto; 
   line-height: 1.6;
   color: #444;
+}
+
+.about-maincard span{
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word; /* Ensures cleaner spacing between words */
+  hyphens: auto; 
+  line-height: 1.6;
+  color: #444;
+  text-decoration: none;
+}
+
+.about-maincard .dots{
+  color: #444444be;
+  margin-bottom: 0px;
+}
+
+.about-maincard .after_dots{
+  display: none;
+}
+
+.about-maincard:hover .after_dots{
+  display: block;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+
+.about-maincard:hover .dots{
+  display: none;
 }
 
 .about-card {
