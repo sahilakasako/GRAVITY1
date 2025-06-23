@@ -1332,6 +1332,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .about-maincard{
@@ -1359,13 +1360,13 @@ body {
 
 .about-card {
   background-color: #f2eeee;
-  padding: 30px 25px;
-  border-radius: 20px;
+  padding: 20px 25px;
+  border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   width: 350px;
   max-width: 90%;
   transition: transform 0.3s;
-  margin-bottom: 0px;
+  margin-bottom: -15px;
   text-align: left;
 }
 
@@ -1374,12 +1375,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.about-card:hover {
-  transform: translateY(-5px);
-}
-
-
 
 .initial_content .arrow-btn {
   background: none;
@@ -1411,6 +1406,12 @@ body {
   text-align: justify;
   text-justify: inter-word; /* Ensures cleaner spacing between words */
   hyphens: auto; 
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  padding: 20px 25px;
+  border-radius: 20px;
 }
 
 .about-card:hover p{
