@@ -1925,10 +1925,11 @@ body {
 
 .social-icons i {
   margin-right: 10px;
-  font-size: 15px;
+  font-size: 20px;
   color: #1A4F7A;
   cursor: pointer;
-  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .footer-bottom {
