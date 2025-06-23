@@ -1372,13 +1372,17 @@ body {
   transform: translateY(-5px);
 }
 
+
+
+
 .about-card h2 {
   font-size: 20px;
   color: #1A4F7A;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .about-card p {
+  display: none;
   font-size: 16px;
   line-height: 1.6;
   color: #444;
@@ -1387,11 +1391,22 @@ body {
   hyphens: auto; 
 }
 
+.about-card:hover p{
+  display: block;
+}
+
+.about-card:hover h2{
+  display: block;
+  margin-bottom: 15px;
+}
+
 .Event-items{
   position: relative;
   margin: 50px 0;
   background-color: #dce4ea;
-  border-radius: 30px;
+  border-radius: 20px;
+  text-align:  center;
+  padding-bottom: 30px;
 }
 
 .Event-items h2{
@@ -1422,18 +1437,20 @@ body {
   width: 200px; /* or any size you want */
   height: auto; /* maintains aspect ratio */
 }
+
+
 .menu .item{
   font-size: 16px;
   text-align: center;
   background: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px #00000014;
   width: 280px;
-  height: 500px;
+  height: auto;
   padding: 20px;
   padding-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .item:hover{
