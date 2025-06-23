@@ -1100,7 +1100,7 @@ body {
 .phn_welcome h1{
   font-size: 22px;
   padding-top: 0px;
-  margin-top: 0px !important;
+  margin-top: 50px !important;
   margin-bottom: 0px !important;
   text-align: center;
   margin-left: 0px;
@@ -1204,7 +1204,7 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 00px;
+  padding: 0px;
 }
 
 .main_slide div:nth-child(1)
@@ -1238,8 +1238,9 @@ body {
   border: 1px solid #1A4F7A;
   border-radius: 5px;
   padding: 0 5px;
-  box-shadow: 0 0px 15px #1e5a8b;
+  box-shadow: 0 0px 10px #1e5a8b;
   transition: all 0.2s;
+  margin-bottom: 50px;
 }
 
 .blue_button i{
@@ -1261,7 +1262,7 @@ body {
 .Remaining{
   background-color: #1a4f7ace;
   padding: 0vw 7vw;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .foundation-section {
