@@ -1478,7 +1478,6 @@ body {
   background-color: #dce4ea;
   border-radius: 20px;
   text-align:  center;
-  padding-bottom: 30px;
 }
 
 .Event-items h2{
@@ -1519,7 +1518,6 @@ body {
   box-shadow: 0 8px 25px #00000014;
   width: 280px;
   height: auto;
-  padding: 20px;
   padding-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 20px;
@@ -1551,10 +1549,9 @@ body {
   color: #444;
 }
 
-.Event-items .red_button{
+.Event-items .blue_button{
   width: 140px;
-  margin-left: 45%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 
