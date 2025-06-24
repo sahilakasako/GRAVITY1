@@ -405,3 +405,29 @@
 
     </div>
   </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .main_slide img {
+  margin-top: 20px;
+  width: 325px;         /* change width */
+  height: auto;         /* auto height keeps image ratio */
+  padding-top: 2vw;
+  align-items: center;
+}
