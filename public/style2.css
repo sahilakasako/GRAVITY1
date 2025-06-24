@@ -211,6 +211,36 @@ nav ul li a:hover {
   visibility: visible;
 }
 
+
+
+
+.menu-item {
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.menu-item:hover {
+  background-color: #ffffff25; /* translucent white hover effect */
+  box-shadow: 0 0 10px #ffffff33;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.menu-item:hover a {
+  color: #1A4F7A; /* Text color on hover */
+}
+
+
+
+
+
 body {
   background-image: url("images/GRAVITY_BGG.png");
   /* background-repeat: no-repeat;        Prevent repeating */
