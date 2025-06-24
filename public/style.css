@@ -1063,7 +1063,6 @@ body {
   overflow: hidden;
 }
 .main_slide .mainlogo {
-  
   text-align: center;
 }
 .main_slide img {
@@ -1072,7 +1071,7 @@ body {
   height: auto;         /* auto height keeps image ratio */
   padding-top: 2vw;
   margin-left: auto;
-  margin-right: 6px;
+  margin-right: auto;
   align-items: center;
 }
 
