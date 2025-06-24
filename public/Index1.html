@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gravity | CIET-MCET</title>
-  <link rel="stylesheet" href="style1.css">
-  <script defer src="App1.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- The above code is to link with css file-->
+  <link rel="icon" href="images/gravity_fav.png" type="image/x-icon">
+  <!-- The above code is for Favicon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- The above code is for symbol of menu-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <script src="App1.js"></script>
+  <!-- The above code are default codes-->
+  <title>Gravity-CIET | Home</title><script defer src="App1.js"></script>
 </head>
 <body>
 
@@ -30,7 +41,7 @@
       <div class="bar2"></div>
       <div class="bar3"></div>
       <ul class="mobile-menu">
-        <li><a href="index.html">Home</a></li>
+        <li class="selected"><a href="index.html">Home</a></li>
         <li><a href="team.html">Our Team</a></li>
         <li><a href="startup1.html">StartUps</a></li>
         <li><a href="Gallery.html">Gallery</a></li>
@@ -41,5 +52,735 @@
 
   <div id="menu-backdrop" onclick="closeMobileMenu()"></div>
 
+  <div class="home">
+  <div class="home_mainpage">
+    <div class="main_slide">
+      <div>
+        <h1><pre><!-- Welcome to <span>Gravity</span> — -->
+<span>C</span>entre for
+<span>I</span>nnovation, 
+<span>E</span>ntrepreneurship & 
+<span>T</span>echnology</pre></h1>
+        <!-- <p>Great ventures are born on rough roads- its the rough journeys that shape the most resilient Leaders and fuel the most Groundbreaking Innovations.</p>-->
+        
+          <button class="red_button" onclick="scrollToAbout()">About Us</button>
+          <button class="red_button" onclick="scrollToContact()">Contact Us</button>
+          <script>
+            function scrollToAbout() {
+              document.getElementById("About").scrollIntoView({ behavior: "smooth" });
+            }
+            function scrollToContact() {
+              document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
+            }
+          </script>
+        
+
+
+      </div>
+
+<!--BACK TO TOP BUTTON-->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fas fa-angle-double-up"></i></button>
+    <script>
+      const btn = document.getElementById("backToTopBtn");
+
+      // Show button after scrolling down 100px
+      window.onscroll = function () {
+        btn.style.display = window.scrollY > 100 ? "block" : "none";
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+<!--BACK TO TOP BUTTON FINISHES-->
+      <!-- The above code is for button and content-->
+      <div class="mainlogo">
+        <div class="phn_welcome">
+          <h1>
+          <span>C</span>ENTRE FOR<br>
+          <span>I</span>NNOVATION, <br>
+          <span>E</span>NTREPRENEURSHIP & <br> 
+          <span>T</span>ECHNOLOGY</h1>
+        </div>
+        <img src="images/Gravitydarklogo.png" alt="Gravity">
+        
+        <div class="buttons">
+          <button class="blue_button" onclick="scrollToAbout()">About Us</button>
+          <button class="blue_button" onclick="scrollToContact()">Contact Us</button>
+          <script>
+            function scrollToAbout() {
+              document.getElementById("About").scrollIntoView({ behavior: "smooth" });
+            }
+            function scrollToContact() {
+              document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
+            }
+          </script>
+        </div>
+      </div>
+      <!-- The above code is image of first food-->
+        
+    </div>
+    <!-- The above code is for contents in home page-->
+     <div class="scroll">
+        <h1>We Have Proudly Worked With</h1>
+    <div class="scroller">
+      <ul>
+        <a href="https://mic.gov.in/" target="_blank"><li class="comp1"><img src="images/MOE_logo.png" alt="MoE's Innovation Cell" /></li></a>
+        <a href="https://iic.mic.gov.in/" target="_blank"><li class="comp"><img src="images/IIC_logo.png" alt="Institution's Innovation Council" /></li></a>
+        <div class="IEDC_logo">
+          <a href="https://iedc.startupmission.in/" target="_blank"><li class="comp"><img src="images/IEDC_logo.png" alt="Innovation And Entrepreneurship Development centre" /></li></a>
+        </div>
+        <div class="KSUM_logo">
+          <a href="https://startupmission.kerala.gov.in/" target="_blank"><li class="comp"><img src="images/KSUM_logo.png" alt="Kerala Startup Mission" /></li></a>
+        </div>
+        <div class="Mulearn_logo">
+          <a href="https://mulearn.org/"><li class="comp" target="_blank"><img src="images/Mulearn_logo.png" alt="Mulearn- A Gtech Initiative"/></li></a>
+        </div>
+      </ul>
+      <ul aria-hidden="true">
+        <a href="https://mic.gov.in/"><li class="comp1" target="_blank"><img src="images/MOE_logo.png" alt="MoE's Innovation Cell" /></li></a>
+        <a href="https://iic.mic.gov.in/"><li class="comp" target="_blank"><img src="images/IIC_logo.png" alt="Institution's Innovation Council" /></li></a>
+        <div class="IEDC_logo">
+          <a href="https://iedc.startupmission.in/" target="_blank"><li class="comp"><img src="images/IEDC_logo.png" alt="Innovation And Entrepreneurship Development centre" /></li></a>
+        </div>
+        <div class="KSUM_logo">
+          <a href="https://startupmission.kerala.gov.in/" target="_blank"><li class="comp"><img src="images/KSUM_logo.png" alt="Kerala Startup Mission" /></li></a>
+        </div>
+        <div class="Mulearn_logo">
+          <a href="https://mulearn.org/"><li class="comp" target="_blank"><img src="images/Mulearn_logo.png" alt="Mulearn- A Gtech Initiative"/></li></a>
+        </div>
+      </ul>
+    </div>
+     </div>
+    
+  </div>
+    <div class="Remaining">
+      <div class="second">
+        <div class="foundation-section">
+          <h1>Our F<span>ound</span>ation</h1>
+          <div class="foundation-cards">
+            <div class="foundation-card">
+              <h2>Mission</h2>
+              <p>
+                To produce excellent entrepreneurs with social commitment through a set of well-formulated training along with the culture of research and development among the students and faculty of this institution.
+              </p>
+            </div>
+            <div class="foundation-card">
+              <h2>Vision</h2>
+              <p>
+                To become a centre of excellence in the field of Innovation and Entrepreneurship (I&E), promoting creativity, out-of-the-box thinking, startup culture, and bringing out socially viable startups that contribute to national development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="second" id="About">
+        <div class="about-section">
+          <h1>Ab<span>out </span>Us</h1>
+          <div class="about-cards">
+            <div class="about-maincard">
+              <p>
+                Gravity is the Centre for Innovation, Entrepreneurship and Technology, committed to empower Entrepreneurs and fostering a Startup ecosystem within the institution. 
+                <span class="dots"> Read more...</span> <pre>    </pre>
+                <span class="after_dots">We serve as a strategic support system, guiding students through every stage of their Entrepreneurial journey from Ideation and Validation to Development and Launch. By offering structured Mentorship, access to industry networks, startup workshops and Incubation support. Our comprehensive ecosystem includes: 
+                </span>
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+                <h2>Idea & Validation</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                We help students identify real-world problems and refine their ides through brainstorming sessions, design thinking workshops and expert feedback. 
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+              <h2>Mentorship & Guidance</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                With access to a network of experienced entrepreneurs, industry leaders and faculty members, students receive one-on one guidance tailored to their startup journey. 
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+                <h2>Product Development</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                Gravity CIET supports the transition from concept to prototype by facilitating access to technical resources, labs and collaborative development teams. 
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+                <h2>Incubation Support</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                Promising ideas get access to incubation facilities, including co-working spaces, technical infrastructure and administrative support. 
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+                <h2>Legal & Startup Compliance</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                Guidance on company registration, intellectual property rights and regulatory compliance ensures students navigate the legal aspects of entrepreneurship confidently.  
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+                <h2>Networking Opportunities</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                We connect students with startup ecosystems, alumni Entrepreneurs, Accelerations and industry bodies to expand their Reach and Collaboration potential. 
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+                <h2>Skill  Development</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                Regular sessions on entrepreneurship, marketing, finance, branding and leadership equip students with essential skills for building and scaling a startups.  
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="initial_content">
+                <h2>Patenting</h2>
+                <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
+              </div>
+              <p>
+                We simplify the patent process by supporting students in filing and securing Intellectual Property Rights, ensuring their Innovations are protected under National and International Standards.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    <div class="Event-items">
+      <h1>Late<span>st Ev</span>ents </h1>
+      <div class="menu">
+        <a href="https://www.instagram.com/p/DKyMHCDBjCp/?igsh=dXhmamhpanYyajZp" target="_blank">
+          <div class="item">
+            <div>
+              <img src="images/Lastest_Event1.jpg" alt="Hackon 2.0" class="event-image">
+              <h2>Hackon 2.0</h2>
+              <p>An exhilarating 48-hour Hackathon awaits- where creativity ignites, teams collaborate and groundbreaking Ideas transform into Real Solutions.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/p/DKW8BouhHnZ/?igsh=MXgzdG90dWRscDBmbg==" target="_blank">
+          <div class="item">
+            <div>
+              <img src="images/Latest_Event2.jpg" alt="Explora'25" class="event-image">
+              <h2>Explora'25</h2>
+              <p>A five-day hands-on learning program that provides students with practical Exposure and technical understanding of the Electric and Hybrid mobility sector.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/p/DKtP52rhZHX/?igsh=dmtybXEydjFqbDRy" target="_blank">
+          <div class="item">
+            <div>
+              <img src="images/Latest_Event3.jpg" alt="Embarka" class="event-image">
+              <h2>Embarka</h2>
+              <p>It is a One-Day Orientation program Organized for the μlearn Student Coordinators and Execom Members. It aims to build strong μlearn Community within the campus.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <a href="Events.html"><button class="blue_button">See More</button></a>
+    </div>
+    <!-- The above code is for SPECIALS-->
+
+    <div class="Achievements">
+      
+    <h1>Achi<span>evem</span>ents</h1>
+    <!--LEFT-->
+    <div class="scroll-wrapper">
+      <div class="scroll-track">
+        <ul class="scroll-list" id="achievementList">
+          <li>
+            <a href="https://www.linkedin.com/in/profpradeepraj/">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement1.jpeg" alt="Achievement" class="event-image">
+                  <p>Recognition of <span class="main">10 years </span>of commitment and contribution to Kerala Startup Mission through Gravity-CIET, MCET in 2025.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/profpradeepraj_innovation-entrepreneurship-iedc-activity-7311775635008274433-tYTz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement2.jpeg" alt="Achievement" class="event-image">
+                  <p>Dr. Pradeep Raj R received <br><span class="main">Top-Performing and Accredited IEDC award</span>  from <br> Minister Prof. R. Bindu.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/profpradeepraj_as-an-innovation-ambassador-im-committed-activity-7204821950215458817-v6bg?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement3.jpeg" alt="Achievement" class="event-image">
+                  <p>Dr. Pradeep Raj R was honored as the <span class="main">Top Performing Innovation Ambassador</span> by MIC, MoE, Government of India.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement4.jpg" alt="Achievement" class="event-image">
+                  <p>Team Evointec has secured <span class="main">First Position </span> in Ideathon Competition conducted by Rajadhani Institute of Engineering and Technology.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement5.png" alt="Achievement" class="event-image">
+                  <p>Team Evointec has secured <span class="main">Third Prize</span> in Ideathon at KTU Tech Fest held at Ahalia School of Engineering and Technology 
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement6.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET actively conducted MoE Innovation Cell initiatives, earning a <span class="main">3.5-star</span> rating in 2020-21.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement15.png" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting campus startups and securing <span class="main">3.5 star</span> in 2023-24.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        
+          
+        </ul>
+
+        <!-- Cloned list for seamless infinite scrolling -->
+        <ul class="scroll-list" aria-hidden="true">
+          <li>
+            <a href="https://www.linkedin.com/in/profpradeepraj/">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement1.jpeg" alt="Achievement" class="event-image">
+                  <p>Recognition of <span class="main">10 years </span>of commitment and contribution to Kerala Startup Mission through Gravity-CIET, MCET in 2025.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/profpradeepraj_innovation-entrepreneurship-iedc-activity-7311775635008274433-tYTz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement2.jpeg" alt="Achievement" class="event-image">
+                  <p>Dr. Pradeep Raj R received <br><span class="main">Top-Performing and Accredited IEDC award</span>  from <br> Minister Prof. R. Bindu.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/profpradeepraj_as-an-innovation-ambassador-im-committed-activity-7204821950215458817-v6bg?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFQ0-5cBYSpcg_rOj6ZFS6oCm46fV8HTL28&utm_campaign=share_via" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement3.jpeg" alt="Achievement" class="event-image">
+                  <p>Dr. Pradeep Raj R was honored as the <span class="main">Top Performing Innovation Ambassador</span> by MIC, MoE, Government of India.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement4.jpg" alt="Achievement" class="event-image">
+                  <p>Team Evointec has secured <span class="main">First Position </span> in Ideathon Competition conducted by Rajadhani Institute of Engineering and Technology.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement5.png" alt="Achievement" class="event-image">
+                  <p>Team Evointec has secured <span class="main">Third Prize</span> in Ideathon at KTU Tech Fest held at Ahalia School of Engineering and Technology 
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement6.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET actively conducted MoE Innovation Cell initiatives, earning a <span class="main">3.5-star</span> rating in 2020-21.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement15.png" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting campus startups and securing <span class="main">3.5 star</span> in 2023-24.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          
+        </ul>
+      </div>
+    
+    <!--RIGHT-->
+      <div class="scroll-track-right">
+        <ul class="scroll-list-right" id="achievementList">
+          
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement7.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted activities as per Ministry of HRD norms, Govt of India, securing a <span class="main">1-star rating</span> in 2018.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement8.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting startups and securing <span class="main">4-star rating </span>in 2022-23.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement9.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET secured <span class="main">Second Runner-up </span>in TVPM category at Innovators Premier League 2021 hosted by KSUM.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement10.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET was officially recognized as a <span class="main">Technology Business Incubator</span> by Kerala Startup Mission in 2022.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement11.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET was awarded as the <span class="main">Top Performing IEDC</span> by Kerala Startup Mission(KSUM) in 2019-2021.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement12.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting startups and securing <span class="main">4-star rating </span>in 2021-22.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement13.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting startups and securing <span class="main">4-star rating </span>in 2019-20.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement14.jpg" alt="Achievement" class="event-image">
+                  <p>Team Evointec received the <span class="main">Startup Awards 2025</span>, MCET - a recognition of Innovation and Entrepreneurial excellence.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          
+        </ul>
+
+        <!-- Cloned list for seamless infinite scrolling -->
+        <ul class="scroll-list-right" aria-hidden="true">
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement7.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted activities as per Ministry of HRD norms, Govt of India, securing a <span class="main">1-star rating</span> in 2018.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement8.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting startups and securing <span class="main">4-star rating </span>in 2022-23.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement9.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET secured <span class="main">Second Runner-up </span>in TVPM category at Innovators Premier League 2021 hosted by KSUM.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement10.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET was officially recognized as a <span class="main">Technology Business Incubator</span> by Kerala Startup Mission in 2022.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement11.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET was awarded as the <span class="main">Top Performing IEDC</span> by Kerala Startup Mission in 2019-2021.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement12.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting startups and securing <span class="main">4-star rating </span>in 2021-22.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement13.jpg" alt="Achievement" class="event-image">
+                  <p>Gravity-CIET, MCET conducted MoE's Innovation Cell activities, promoting startups and securing <span class="main">4-star rating </span>in 2019-20.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/iedcmcet/posts/?feedView=all" target="_blank">
+              <div class="item">
+                <div>
+                  <img src="images/Achievement14.jpg" alt="Achievement" class="event-image">
+                  <p>Team Evointec proudly receives the <span class="main">Startup Awards 2025</span>, MCET - a recognition of Innovation, Passion and Entrepreneurial excellence.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+    <div class="Gallery">
+      <h1>Our Ca<span>ndid</span> Gallery</h1>
+      <div class="memoryscroller" id="memoryScroller">
+        <ul>
+      <li class="memory"><img src="images/Galley111.jpeg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley110.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley98.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley99.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley115.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley116.jpg" alt="Our Candid Pics" /></li>
+    </ul>
+        <ul aria-hidden="true">
+          <li class="memory"><img src="images/Galley111.jpeg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley110.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley98.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley99.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley115.jpg" alt="Our Candid Pics" /></li>
+      <li class="memory"><img src="images/Galley116.jpg" alt="Our Candid Pics" /></li>
+        </ul>
+        
+      </div>
+    </div>
+
+
+
+<script>
+  const scroller = document.getElementById("memoryScroller");
+
+  let scrollAmount = 1;
+  let autoScroll = setInterval(() => {
+    scroller.scrollLeft += scrollAmount;
+    if (scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth) {
+      scroller.scrollLeft = 0;
+    }
+  }, 20); // Adjust speed here
+
+  // Pause on hover
+  scroller.addEventListener("mouseenter", () => clearInterval(autoScroll));
+  scroller.addEventListener("mouseleave", () => {
+    autoScroll = setInterval(() => {
+      scroller.scrollLeft += scrollAmount;
+      if (scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth) {
+        scroller.scrollLeft = 0;
+      }
+    }, 20);
+  });
+</script>
+
+
+
+
+
+
+
+    <footer class="footer" id="Contact">
+      <div class="footer-container">
+        <div class="footer-column">
+          <div class="phn_view">
+            <h2><span>Gravity </span> CIET</h2>
+            <p>Great ventures are born on rough roads- its the rough journeys that shape the most resilient Leaders and fuel the most Groundbreaking Innovations.</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/company/iedcmcet/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <!--  <i class="fab fa-facebook"></i>  -->
+              <!-- <i class="fab fa-twitter"></i> -->
+              <a href="https://www.instagram.com/gravity_iedc?igsh=MXA3cXd1cTQxMmlyZg==" target="_blank"><i class="fab fa-instagram"></i> </a>
+              <a href="https://chat.whatsapp.com/ErbFHVmJJIjL1syAbDPg1E" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://youtube.com/@gravityiedc-cietmcet-youtube?si=OW5JHIRjFMEimQnD" target="_blank"><i class="fab fa-youtube"></i> </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="baaki">
+          <div class="footer-column">
+            <h3>About</h3>
+            <p>About Us</p>
+            <p>Vision</p>
+            <p>Mission</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Initiatives</h3>
+            <p>WEED</p>
+            <p>Innovation School</p>
+            <p>Idea Cafe</p>
+            <p>IPR Cell</p>
+            <p>TBIC</p>
+            <p>R-Hub</p>
+            <p>Design-Hub</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Team</h3>
+            <p>Execom Members</p>
+            <p>μLearn Student Coordinators</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>iedc@mcet.ac.in</p>
+            <p>Nodal Officer: +91 94464 94938</p>
+            <p>CEO: +91 73061 14105</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="footer-bottom">
+        <!--  <p>© Gravity CIET 2025 - All rights reserved</p>  -->
+        <h2 class="powered">Powered by GeekWorks Studio</h2>
+      </div>
+    </footer>
+  </div>
+    <!-- The above code is for home page-->
 </body>
+
 </html>
