@@ -1061,16 +1061,19 @@ body {
   /* or */
   /* background-size: 50% auto; */    /* Make width 50%, height auto to maintain ratio */
   overflow: hidden;
-  
 }
-
+.main_slide .mainlogo {
+  
+  text-align: center;
+}
 .main_slide img {
   margin-top: 20px;
   width: 325px;         /* change width */
   height: auto;         /* auto height keeps image ratio */
   padding-top: 2vw;
-  margin-left: 0px;
+  margin-left: auto;
   margin-right: 6px;
+  align-items: center;
 }
 
 .main_slide .red_button {
