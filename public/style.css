@@ -1062,16 +1062,29 @@ body {
   /* background-size: 50% auto; */    /* Make width 50%, height auto to maintain ratio */
   overflow: hidden;
 }
-.main_slide .mainlogo {
+
+.mainlogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* optional if you want vertical centering */
   text-align: center;
+  width: 100%;
 }
+
+.mainlogo img {
+  display: block;
+  margin: 20px auto;  /* Horizontally center */
+  width: 325px;        /* Your preferred width */
+  height: auto;
+  padding-top: 2vw;
+}
+
 .main_slide img {
   margin-top: 20px;
   width: 325px;         /* change width */
   height: auto;         /* auto height keeps image ratio */
   padding-top: 2vw;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
 }
 
