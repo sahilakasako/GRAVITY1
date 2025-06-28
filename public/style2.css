@@ -163,21 +163,23 @@ nav ul li a:hover {
   z-index: 1000000;
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
   list-style: none;
-  padding-left: 0;
+  padding-left: 0px;
   font-weight: bold;
+
 }
 
 .mobile-menu li {
-  margin: 30px 0;
+  margin: 0px 0px;
   list-style-type: none;
 }
 
 
 
-.mobile-menu li a {
-  color: white;
+.mobile-menu a li{
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 18px;
+
 }
 
 .mobile-menu li a:hover {
@@ -212,34 +214,19 @@ nav ul li a:hover {
 }
 
 
-
-
 .menu-item {
-  padding: 12px 20px;
+  padding: 40px 100px;
   border-radius: 10px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  background-color: #1c73b100;
+  margin-left: 150px;
 }
 
 .menu-item:hover {
-  background-color: #ffffff25; /* translucent white hover effect */
+  background-color: #1A4F7A; /* translucent white hover effect */
   box-shadow: 0 0 10px #ffffff33;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
-
-.menu-item a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
-}
-
-.menu-item:hover a {
-  color: #1A4F7A; /* Text color on hover */
-}
-
-
-
-
 
 body {
   background-image: url("images/GRAVITY_BGG.png");
