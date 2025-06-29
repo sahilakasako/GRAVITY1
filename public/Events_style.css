@@ -270,6 +270,7 @@ body {
   padding: 20px;
   background-color: #f2eeee;
   border-radius: 20px;
+  margin-top: 57px;
 }
 
 .food_items h1 {
@@ -603,8 +604,8 @@ body {
   text-align: center;
   margin-top: 10px;
   font-size: 15px;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-weight: normal;
   color: #666;
   font-size: 17px;

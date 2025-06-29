@@ -271,6 +271,7 @@ body {
   padding: 20px;
   background-color: #ffffffcf;
   border-radius: 30px;
+  margin-top: 50px;
 }
 
 .food_items .item {
@@ -445,9 +446,8 @@ body {
 
 .home{
   padding: 0 7vw;
-  margin-top: -80px;
   background-color: #1a4f7ace;
-  margin-top: -40px;
+  margin-top: -90px;
   padding-top: 120px;
   padding-bottom: 100px;
   /*overflow-x: hidden;*/
@@ -504,7 +504,7 @@ body {
   background-color: white; 
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
 
@@ -514,6 +514,7 @@ body {
   border-radius: 8px;
   margin-left: 13px !important;
   margin-right: 17px !important;
+  margin-bottom: 0px !important;
 }
 
 .food_items .item .content {
@@ -523,17 +524,26 @@ body {
   align-items: center;
 }
 
+.food_items .heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .food_items .item h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  margin-top: 0px !important;
 }
 
 .food_items .item p {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  margin-left: 50px;
-  text-align: justify;
+  margin: 10px 0;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+.food_items .item .description{
   display: none;
 }
 
