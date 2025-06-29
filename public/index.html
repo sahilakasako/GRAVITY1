@@ -19,7 +19,6 @@
   <title>Gravity-CIET | Home</title><script defer src="App1.js"></script>
 </head>
 <body>
-
   <header>
     <div id="brand"><div class="logo">
         <div class="Gravity_logo"><a href="https://gravitymcet.com/"><img src="images/gravity_logo.png" alt="Gravity"></a></div>
@@ -41,12 +40,13 @@
       <div class="bar2"></div>
       <div class="bar3"></div>
       <ul class="mobile-menu">
-        <li class="selected"><a href="index.html">Home</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="startup1.html">StartUps</a></li>
-        <li><a href="Gallery.html">Gallery</a></li>
-        <li><a href="Events.html">Events</a></li>
+        <a href="index.html"><li class="menu-item">Home</li></a>
+        <a href="team.html"><li class="menu-item">Our Team</li></a>
+        <a href="startup1.html"><li class="menu-item">StartUps</li></a>
+        <a href="Gallery.html"><li class="menu-item">Gallery</li></a>
+        <a href="Events.html"><li class="menu-item">Events</li></a>
       </ul>
+
     </div>
   </header>
 
@@ -79,6 +79,28 @@
       </div>
 
 <!--BACK TO TOP BUTTON-->
+
+    <style>
+      #backToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #ffffff;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        display: none; /* Hidden by default */
+        z-index: 1;
+        transition: opacity 0.3s;
+      }
+
+      #backToTopBtn:hover {
+        background-color: #1A4F7A;
+      }
+    </style>
     <button onclick="scrollToTop()" id="backToTopBtn"><i class="fas fa-angle-double-up"></i></button>
     <script>
       const btn = document.getElementById("backToTopBtn");
@@ -300,7 +322,7 @@
           </div>
         </a>
       </div>
-      <a href="index2.html"><button class="blue_button">See More</button></a>
+      <a href="Events.html"><button class="blue_button">See More</button></a>
     </div>
     <!-- The above code is for SPECIALS-->
 

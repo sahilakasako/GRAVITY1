@@ -160,24 +160,26 @@ nav ul li a:hover {
   transform: translateX(80px);
   pointer-events: none;
   visibility: hidden;
-  z-index: 1000000;
+  z-index: 9999;
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
   list-style: none;
-  padding-left: 0;
+  padding-left: 0px;
   font-weight: bold;
+
 }
 
 .mobile-menu li {
-  margin: 30px 0;
+  margin: 0px 0px;
   list-style-type: none;
 }
 
 
 
-.mobile-menu li a {
-  color: white;
+.mobile-menu a li{
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 18px;
+
 }
 
 .mobile-menu li a:hover {
@@ -190,6 +192,7 @@ nav ul li a:hover {
   transform: translateY(0);
   pointer-events: auto;
   visibility: visible;
+  z-index: 9999;
 }
 
 /* Backdrop */
@@ -202,13 +205,29 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  z-index: 999;
+  z-index: 9999;
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 .open ~ #menu-backdrop {
   opacity: 1;
   visibility: visible;
+  z-index: 9999;
+}
+
+
+.menu-item {
+  padding: 40px 100px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #1c73b100;
+  margin-left: 150px;
+}
+
+.menu-item:hover {
+  background-color: #1A4F7A; /* translucent white hover effect */
+  box-shadow: 0 0 10px #ffffff33;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 body {
@@ -849,26 +868,7 @@ body {
 
 
 
-#backToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  background-color: #dce4ea;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  display: none; /* Hidden by default */
-  z-index: 1000;
-  transition: opacity 0.3s;
-}
-
-#backToTopBtn:hover {
-  background-color: #1A4F7A;
-}
-
+/*back to top button is in the html code */
 
 
 
@@ -1272,6 +1272,7 @@ body {
   background-color: #1a4f7ace;
   padding: 0vw 7vw;
   padding-top: 70px;
+  padding-bottom: 10px;
 }
 
 .foundation-section {

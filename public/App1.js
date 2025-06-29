@@ -6,3 +6,4 @@ function closeMobileMenu() {
   const menu = document.getElementById("hamburger-icon");
   menu.classList.remove("open");
 }
+/* DO NOT DELETE THE ABOVE CODE*/

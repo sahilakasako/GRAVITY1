@@ -11,7 +11,10 @@
     <!-- The above code is for Favicon-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gravity-CIET | StartUp</title>
+  <title>Gravity-CIET | Gallery</title>
+  <script src="App1.js"></script>
+  <!-- The above code are default codes-->
+  <script defer src="App1.js"></script>
 </head>
 <style>
     body {
@@ -20,131 +23,61 @@
   </style>
 <body>
   <header>
-    <div class="header">
-      <div class="headerbar"><!-- Tablet view-->
-
-        <div class="account"><!-- Account consists of Home, search, searchinput-->
-          <ul>
-            <a href="#">
-              <li>
-                <i class="fa-solid fa-house-chimney"></i>
-              </li>
-            </a>
-            <!-- The above code is home icon-->
-            <a href="#">
-              <li>
-                <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
-              </li>
-            </a>
-            <!-- The above code is for search icon-->
-            <div class="search" id="searchinput1">
-              <input type="search">
-              <i class="fa-solid fa-magnifying-glass srchicon"></i>
-            </div>
-            <a href="#">
-              <li>
-                <i class="fa-solid fa-user" id="user-mb"></i>
-              </li>
-            </a>
-            <!-- The above code is profile icon-->
-          </ul>
-        </div>
-
-
-        <div class="nav">
-          <ul>
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="team.html">
-            <li>Our Team</li>
-          </a>
-          <a href="Startup1.html">
-            <li>StartUps</li>
-          </a>
-          <a href="Gallery.html" >
-            <li  class="selected">Gallery</li>
-          </a>
-          <a href="Events.html" >
-            <li>Events</li>
-          </a>
-        </ul>
-        </div>
-        <!-- The above code is for navigation bar(tablet view)-->
-      </div>
-      <!-- The above code is for TABLET VIEW CONFIGURATION-->
-
-
-
-      <div class="logo">
+    <div id="brand"><div class="logo">
         <div class="Gravity_logo"><a href="https://gravitymcet.com/"><img src="images/gravity_logo.png" alt="Gravity"></a></div>
         <p style="border-left: 2px solid rgb(224, 217, 217);"></p>
         <div class="Mcet_logo"><a href="https://mcet.ac.in/"><img src="images/MCET_logoo.png" alt="MCET"></a></div> 
-      </div>
-      <!-- The above code is for MCET And gravity logo-->
+      </div></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="startup1.html">StartUps</a></li>
+        <li class="selected"><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Events.html">Events</a></li>
+      </ul>
+    </nav>
 
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <a href="index.html"><li class="menu-item">Home</li></a>
+        <a href="team.html"><li class="menu-item">Our Team</li></a>
+        <a href="startup1.html"><li class="menu-item">StartUps</li></a>
+        <a href="Gallery.html"><li class="menu-item">Gallery</li></a>
+        <a href="Events.html"><li class="menu-item">Events</li></a>
+      </ul>
 
-      <div class="bar">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark" id="hdcross"></i>
-      </div>
-      <!-- The above code is for symbol of menu to show-->
-
-
-      <div class="nav"> <!--Desktop view-->
-        <ul>
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="team.html">
-            <li>Our Team</li>
-          </a>
-          <a href="Startup1.html">
-            <li>StartUps</li>
-          </a>
-          <a href="Gallery.html" >
-            <li  class="selected">Gallery</li>
-          </a>
-          <a href="Events.html" >
-            <li>Events</li>
-          </a>
-        </ul>
-       </div>
-
-       <!-- The above code is for DEFAULT navigation bar(desktop view)-->
-       <div class="account"> <!-- Account consists of Home, search, searchinput-->
-        <ul>
-          <a href="#">
-            <li>
-              <i class="fa-solid fa-house-chimney"></i>
-            </li>
-          </a>
-          <!-- The above code is for home icon-->
-          <a href="#">
-            <li>
-              <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
-            </li>
-          </a>
-          <!-- The above code is for search icon-->
-          <div class="search" id="searchinput2">
-            <input type="search">
-            <i class="fa-solid fa-magnifying-glass srchicon"></i>
-          </div>
-          <!-- The above code is for typing what to search-->
-          <a href="#">
-            <li>
-              <i class="fa-solid fa-user" id="user-lap"></i>
-            </li>
-          </a>
-          <!-- The above code is for profile icon-->
-        </ul>
-      </div>
-      <!-- The above code is for DEFAULT VIEW(desktop view)-->
-       
     </div>
-  </header>  
+  </header>
+
+  <div id="menu-backdrop" onclick="closeMobileMenu()"></div>
   <!-- The above code is for BEING THE HEAD OF THE SITE-->
    <!--BACK TO TOP BUTTON-->
+
+    <style>
+      #backToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #ffffff;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        display: none; /* Hidden by default */
+        z-index: 1;
+        transition: opacity 0.3s;
+      }
+
+      #backToTopBtn:hover {
+        background-color: #1A4F7A;
+      }
+    </style>
     <button onclick="scrollToTop()" id="backToTopBtn"><i class="fas fa-angle-double-up"></i></button>
     <script>
       const btn = document.getElementById("backToTopBtn");
