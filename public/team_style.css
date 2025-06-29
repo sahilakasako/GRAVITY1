@@ -629,7 +629,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
+  
 }
 
 .item {
@@ -637,7 +638,7 @@ body {
   border: 1px solid #eee;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  width: 150px !important;
+  width: 100px !important;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -648,11 +649,11 @@ body {
 
 .item img.profile {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   object-fit: cover;
   margin-bottom: 15px;
-}*
+}
 
 .item h2 {
   margin: 10px 0 5px;
