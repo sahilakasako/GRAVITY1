@@ -604,8 +604,8 @@ body {
 
 .food_items{
   margin-top: 80px;
-  margin-left: 40px !important;
-  margin-right: 40px !important;
+  margin-left: 30px !important;
+  margin-right: 30px !important;
 }
 .food_items h1 {
   text-align: center;
@@ -637,7 +637,7 @@ body {
   border: 1px solid #eee;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  width: 300px;
+  width: 150px !important;
   text-align: center;
   transition: transform 0.3s ease;
 }
