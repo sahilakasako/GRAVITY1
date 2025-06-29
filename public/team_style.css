@@ -678,6 +678,7 @@ body {
   height: 125px;
   object-fit: cover;
   margin-bottom: 15px;
+  border: 3px solid #1A4F7A;
 }
 
 .item h2 {
