@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Single Image Scroll</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .gallery-container {
+      position: relative;
+      width: 80%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .gallery-wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .gallery-image {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.5rem;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.3rem 0.8rem;
+      cursor: pointer;
+      z-index: 10;
+      user-select: none;
+      border-radius: 5px;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .dots-container {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery-container">
+    <div class="arrow left" onclick="scrollGallery(-1)">&#10094;</div>
+    <div class="gallery-wrapper" id="gallery">
+      <img src="images/Galley117.jpeg" alt="Our Memories" class="gallery-image" />
+      <img src="images/Galley118.jpeg" alt="Our Memories" class="gallery-image" />
+      <img src="images/Galley119.jpeg" alt="Our Memories" class="gallery-image" />
+    </div>
+    <div class="arrow right" onclick="scrollGallery(1)">&#10095;</div>
+    <div class="dots-container" id="dots"></div>
+  </div>
+
+  <script>
+    const gallery = document.getElementById('gallery');
+    const images = document.querySelectorAll('.gallery-image');
+    const dotsContainer = document.getElementById('dots');
+    let index = 0;
+    let autoSlideInterval;
+
+    function updateGallery() {
+      const offset = index * gallery.offsetWidth;
+      gallery.style.transform = `translateX(-${offset}px)`;
+      updateDots();
+    }
+
+    function scrollGallery(direction) {
+      const total = images.length;
+      index += direction;
+      if (index < 0) index = total - 1;
+      if (index >= total) index = 0;
+      updateGallery();
+    }
+
+    function updateDots() {
+      document.querySelectorAll('.dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    function goToSlide(i) {
+      index = i;
+      updateGallery();
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+        scrollGallery(1);
+      }, 4000); // Change image every 4 seconds
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    // Create dots
+    images.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        goToSlide(i);
+        stopAutoSlide();
+        startAutoSlide();
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    startAutoSlide();
+  </script>
+
+</body>
+</html>

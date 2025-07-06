@@ -511,13 +511,6 @@ body {
   margin-bottom: 10px;
 }
 
-.center-wrapper {
-    display: none !important;
-    height: 0;
-    margin: 0;
-    padding: 0;
-  }
-
 .food_items{
   padding: 20px;
   background-color: #f2eeee;
