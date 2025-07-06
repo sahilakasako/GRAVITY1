@@ -240,6 +240,16 @@ body {
   
 }
 
+.buttons{
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+.buttons .red_button {
+  margin-right: 15px; /* space between buttons */
+  margin-left: 15px;
+}
+
 #backToTopBtn {
   position: fixed;
   bottom: 20px;
@@ -265,14 +275,16 @@ body {
 }
 
 .home {
-  padding: 50px 20px;
+  padding: 50px 38px;
   background-color: #1a4f7ace;
   margin-top: -70px;
   padding-bottom: 30px;
+  padding-top: 100px;
 }
 
 .food_items{
   margin-top: 80px;
+  border-radius: 20px !important;
 }
 .food_items h1 {
   text-align: center;
@@ -319,7 +331,8 @@ body {
   height: 150px;
   object-fit: cover;
   margin-bottom: 15px;
-}*
+  /*border: 3px solid #1A4F7A;*/
+}
 
 .item h2 {
   margin: 10px 0 5px;
@@ -433,16 +446,16 @@ body {
 
 .red_button{
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 110px;
   font-weight: bold;
   color: aliceblue;
   line-height: 50px;
   background-color: #1A4F7A;
-  border: 0;
+  border: 1px solid #1A4F7A;
   border-radius: 5px;
   padding: 0 5px;
-  box-shadow: 0 0px 15px #1e5a8b;
+  box-shadow: 0 0px 10px #1e5a8b;
   transition: all 0.2s;
 }
 
@@ -453,7 +466,7 @@ body {
 
 .red_button:hover{
   background-color: aliceblue;
-  box-shadow: 0 2px 15px #1e5888;
+  box-shadow: 0 0px 10px #1e5888;
   color: #1A4F7A;
   border: 1px solid #1A4F7A;
 }
@@ -678,7 +691,7 @@ body {
   height: 125px;
   object-fit: cover;
   margin-bottom: 15px;
-  border: 3px solid #1A4F7A;
+  /*border: 3px solid #1A4F7A;*/
 }
 
 .item h2 {

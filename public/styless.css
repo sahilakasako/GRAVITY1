@@ -524,20 +524,12 @@ body {
   margin-top: 70px;
 }
 
-
 .about-section h1{
   color: #1A4F7A;
   margin-bottom: 50px;
   font-size: 40px;
 }
-.about-section .ecosystem-heading {
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-  margin: 0px 0 0px;
-  color: #1A4F7A;
-  display: block;
-}
+
 .about-section span{
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -608,7 +600,7 @@ body {
 }
 
 .about-card h2 {
-  font-size: 20px;
+  font-size: 24px;
   color: #1A4F7A;
   margin-bottom: 15px;
 }
@@ -1546,20 +1538,10 @@ body {
   padding-bottom: 30px;
 }
 
-.read-toggle {
-  color: #1a4f7a;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .about-section h1{
   color: #1A4F7A;
   margin-bottom: 20px;
   font-size: 25px;
-}
-
-.about-section .ecosystem-heading {
-  font-size: 20px;
 }
 
 .about-section span{
@@ -1612,6 +1594,24 @@ body {
   text-decoration: none;
 }
 
+.about-maincard .dots{
+  color: #1A4F7A;
+  margin-bottom: 0px;
+}
+
+.about-maincard .after_dots{
+  display: none;
+}
+
+.about-maincard:hover .after_dots{
+  display: block;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+
+.about-maincard:hover .dots{
+  display: none;
+}
 
 .about-card {
   background-color: #f2eeee;
@@ -1646,49 +1646,15 @@ body {
   margin-bottom: 0px;
 }
 
-.about-card:hover .arrow-btn {
-  transform: rotate(0deg); /* Optional animation */
-  margin-top: -10px;
-  transition: transform 0.3s ease;
-}
-
-
 .about-card p {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding-top: 0;
-  margin-top: 0;
-  opacity: 0;
+  display: none;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+  text-justify: inter-word; /* Ensures cleaner spacing between words */
+  hyphens: auto; 
 }
-
-/* Show paragraph when card is open */
-.about-card.open p {
-  max-height: 500px; /* Adjust as needed */
-  opacity: 1;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-/* Rotate arrow icon when open */
-.about-card.open .arrow-btn i {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-.arrow-btn i {
-  transition: transform 0.3s ease;
-}
-
-/* Ensure the icon inside the button rotates when the card is open */
-.about-card .arrow-btn i {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-
-
-
- 
 
 .about-card:hover {
   transform: translateY(0px);
@@ -1699,7 +1665,12 @@ body {
 .about-card:hover p{
   display: block;
 }
+.about-card:hover .arrow-btn {
+  transform: rotate(180deg); /* Optional animation */
+  margin-top: -10px;
+  transition: transform 0.3s ease;
 
+}
 .about-card:hover h2{
   display: block;
   margin-bottom: 15px;

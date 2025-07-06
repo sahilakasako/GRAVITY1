@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="styless.css">
+  <link rel="stylesheet" href="style.css">
   <!-- The above code is to link with css file-->
   <link rel="icon" href="images/gravity_fav.png" type="image/x-icon">
   <!-- The above code is for Favicon-->
@@ -17,7 +17,6 @@
   <script src="App1.js"></script>
   <!-- The above code are default codes-->
   <title>Gravity-CIET | Home</title><script defer src="App1.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -203,166 +202,13 @@
           <h1>Ab<span>out </span>Us</h1>
           <div class="about-cards">
             <div class="about-maincard">
-              <p id="short-text">
-                Gravity is the Centre for Innovation, Entrepreneurship and Technology, committed to empower Entrepreneurs and fostering a Startup ecosystem within the institution.
-                <span id="read-more" class="read-toggle"> Read more...</span>
-              </p>
-
-              <p id="full-text" style="display: none;">Gravity is the Centre for Innovation, Entrepreneurship and Technology, committed to empower Entrepreneurs and fostering a Startup ecosystem within the institution. We serve as a strategic support system, guiding students through every stage of their Entrepreneurial journey from Ideation and Validation to Development and Launch. By offering structured Mentorship, access to industry networks, startup workshops and Incubation support.
-                <span id="read-less" class="read-toggle"> Read less</span>
+              <p>
+                Gravity is the Centre for Innovation, Entrepreneurship and Technology, committed to empower Entrepreneurs and fostering a Startup ecosystem within the institution. 
+                <span class="dots"> Read more...</span> <pre>    </pre>
+                <span class="after_dots">We serve as a strategic support system, guiding students through every stage of their Entrepreneurial journey from Ideation and Validation to Development and Launch. By offering structured Mentorship, access to industry networks, startup workshops and Incubation support. Our comprehensive ecosystem includes: 
+                </span>
               </p>
             </div>
-<style>
-  .about-section {
-      background: #dce4ea;
-      text-align: center;
-      border-radius: 20px;
-      margin-top: 50px;
-      padding-bottom: 30px;
-    }
-
-    .about-cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding-bottom: 25px;
-    }
-
-    .about-maincard {
-      background-color: #f2eeee;
-      padding: 20px 25px;
-      border-radius: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-      max-width: 90%;
-      transition: transform 0.3s;
-      margin-bottom: 0px;
-      text-align: justify;
-      overflow: visible;
-    }
-
-    .about-maincard p {
-      font-size: 16px;
-      text-align: justify;
-      text-justify: inter-word;
-      hyphens: auto;
-      line-height: 1.6;
-      color: #444;
-    }
-
-    .about-maincard span.read-toggle {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #1a4f7a;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    /* Default: hide toggle buttons */
-    #read-more,
-    #read-less {
-      display: none;
-    }
-
-    /* Small screens: show short text initially, enable toggles */
-    @media screen and (max-width: 480px) {
-      #short-text {
-        display: block;
-      }
-
-      #full-text {
-        display: none;
-      }
-
-      #read-more {
-        display: inline;
-      }
-      #read-less {
-        display: inline;
-      }
-    }
-  </style>
-<script>
-    function toggleRead(state) {
-      const shortText = document.getElementById("short-text");
-      const fullText = document.getElementById("full-text");
-
-      if (state === "more") {
-        shortText.style.display = "none";
-        fullText.style.display = "block";
-      } else {
-        shortText.style.display = "block";
-        fullText.style.display = "none";
-      }
-    }
-
-    window.addEventListener("DOMContentLoaded", function () {
-      const readMore = document.getElementById("read-more");
-      const readLess = document.getElementById("read-less");
-
-      // For screens 480px or less
-      if (window.innerWidth <= 480) {
-        readMore.addEventListener("click", function () {
-          toggleRead("more");
-        });
-
-        readLess.addEventListener("click", function () {
-          toggleRead("less");
-        });
-      } else {
-        // On desktop, show full text, hide toggles
-        document.getElementById("short-text").style.display = "none";
-        document.getElementById("full-text").style.display = "block";
-      }
-    });
-  </script>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const arrowButtons = document.querySelectorAll(".arrow-btn");
-
-    arrowButtons.forEach(button => {
-      button.addEventListener("click", function (e) {
-        e.stopPropagation();
-        const card = button.closest(".about-card");
-        card.classList.toggle("open");
-
-        // Close others
-        document.querySelectorAll(".about-card").forEach(other => {
-          if (other !== card) {
-            other.classList.remove("open");
-          }
-        });
-      });
-    });
-
-    // Close all when clicking outside
-    document.addEventListener("click", function (e) {
-      if (!e.target.closest(".about-card")) {
-        document.querySelectorAll(".about-card").forEach(card => {
-          card.classList.remove("open");
-        });
-      }
-    });
-
-    // Allow clicking on heading to toggle too
-    const headings = document.querySelectorAll(".about-card h2");
-    headings.forEach(heading => {
-      heading.addEventListener("click", function () {
-        const card = heading.closest(".about-card");
-        card.classList.toggle("open");
-
-        document.querySelectorAll(".about-card").forEach(other => {
-          if (other !== card) {
-            other.classList.remove("open");
-          }
-        });
-      });
-    });
-  });
-</script>
-            <h2 class="ecosystem-heading">Our ecosystem includes:</h2>
             <div class="about-card">
               <div class="initial_content">
                 <h2>Idea & Validation</h2>
@@ -372,8 +218,6 @@
                 We help students identify real-world problems and refine their ides through brainstorming sessions, design thinking workshops and expert feedback. 
               </p>
             </div>
-
-
             <div class="about-card">
               <div class="initial_content">
               <h2>Mentorship & Guidance</h2>
@@ -403,7 +247,7 @@
             </div>
             <div class="about-card">
               <div class="initial_content">
-                <h2>Startup Compliance</h2>
+                <h2>Legal & Startup Compliance</h2>
                 <button class="arrow-btn"><i class="fas fa-chevron-down"></i></button>
               </div>
               <p>
