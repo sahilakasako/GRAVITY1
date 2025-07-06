@@ -361,6 +361,17 @@
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const aboutCards = document.querySelectorAll(".about-card");
+
+    aboutCards.forEach(card => {
+      card.addEventListener("click", function () {
+        // Toggle the 'open' class on the clicked card
+        this.classList.toggle("open");
+      });
+    });
+  });
 </script>
             <h2 class="ecosystem-heading">Our ecosystem includes:</h2>
             <div class="about-card">
