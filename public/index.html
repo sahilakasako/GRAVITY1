@@ -366,9 +366,26 @@
     const aboutCards = document.querySelectorAll(".about-card");
 
     aboutCards.forEach(card => {
-      card.addEventListener("click", function () {
-        // Toggle the 'open' class on the clicked card
-        this.classList.toggle("open");
+      // Toggle open on click inside .initial_content
+      card.querySelector(".initial_content").addEventListener("click", function (e) {
+        card.classList.toggle("open");
+        e.stopPropagation(); // Prevent bubbling to document
+      });
+
+      // Clicking anywhere else on the card also toggles
+      card.addEventListener("click", function (e) {
+        // Prevent clicking the paragraph from toggling again
+        if (!e.target.closest(".initial_content")) return;
+        card.classList.toggle("open");
+      });
+    });
+
+    // Optional: Close if clicked outside any card
+    document.addEventListener("click", function (e) {
+      aboutCards.forEach(card => {
+        if (!card.contains(e.target)) {
+          card.classList.remove("open");
+        }
       });
     });
   });
