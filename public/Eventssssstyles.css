@@ -387,6 +387,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0px; /* space between cards */
   padding: 20px;
+  justify-items: center; /* Add this line to center grid items horizontally */
+  max-width: 1200px; /* Optional: limits maximum width of the grid */
+  margin: 0 auto; /* Optional: centers the grid itself if it doesn't take full width */
 }
 
 .buttons{
@@ -511,6 +514,13 @@ body {
   margin-bottom: 10px;
 }
 
+.center-wrapper {
+    display: none !important;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+
 .food_items{
   padding: 20px;
   background-color: #f2eeee;
@@ -534,7 +544,7 @@ body {
   height: 320px;
   perspective: 1000px;
   cursor: pointer;
-  margin: auto;
+  margin: 0 auto 50px !important;
   margin-bottom: 50px;
 }
 
@@ -612,7 +622,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0px; /* space between cards */
-  padding: 20px;
+  padding: 20px 0;
+  justify-items: center; /* Add this line to center grid items horizontally */
+  max-width: 1200px; /* Optional: limits maximum width of the grid */
+  margin: auto auto; /* Optional: centers the grid itself if it doesn't take full width */
 }
 
 .buttons{
