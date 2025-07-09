@@ -185,20 +185,62 @@
 </head>
 <body>
 
-  <div class="center-wrapper">
-    <div class="gallery-container">
-      <div class="arrow left" onclick="scrollGallery(-1)">&#10094;</div>
-      <div class="gallery-wrapper" id="gallery">
-        <img src="images/Upcoming1.jpg" alt="Hackon 2.0" class="gallery-image" />
-        <img src="images/Upcoming2.jpg" alt="Hackon 2.0" class="gallery-image" />
-        
-      </div>
-      <div class="arrow right" onclick="scrollGallery(1)">&#10095;</div>
-      <div class="dots-container" id="dots"></div>
+  <div class="upcoming-events-container">
+    <h2 class="upcoming-heading">Upcoming Event<span class="alert-dot"></span></h2>
+    
+    <div class="center-wrapper">
+        <div class="gallery-container">
+            <!--<div class="arrow left" onclick="scrollGallery(-1)">&#10094;</div>-->
+            <div class="gallery-wrapper" id="gallery">
+                <img src="images/Upcoming2.jpg" alt="Hackon 2.0" class="gallery-image" />
+            </div>
+            <!--<div class="arrow right" onclick="scrollGallery(1)">&#10095;</div>-->
+            <div class="dots-container" id="dots"></div>
+        </div>
     </div>
-  </div>
+</div>
 
-  <script>
+<style>
+    .upcoming-events-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .upcoming-heading {
+        margin: 0;
+        margin-left: 70px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 24px;
+        color: #196ca8;
+    }
+    
+    .alert-dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color: red;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.3; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+    
+    .center-wrapper {
+        /* Your existing gallery styles */
+    }
+    
+    /* Rest of your existing gallery CSS */
+</style>
+
+<script>
+    // Your existing JavaScript code
     const gallery = document.getElementById('gallery');
     const images = document.querySelectorAll('.gallery-image');
     const dotsContainer = document.getElementById('dots');
@@ -253,7 +295,8 @@
     });
 
     startAutoSlide();
-  </script>
+</script>
+
       <!--HACKON-->
         <div class="events-grid">
           <div class="event-card">
@@ -268,7 +311,10 @@
                 <div class="flip-back">
                   <div class="event-details">
                     <h2>Hackon 2.0</h2>
-                    <p>An exhilarating 48-hour Hackathon awaits:</p>
+                    <p>An exhilarating 48-hour Hackathon awaits.
+                    </p>
+                    <p>Whether you are into coding, design, business strategy, problem - solving and passionate about innovation - HACKON 2.0 is your moment to shine.
+</p>
                     <ul>
                       <li>🏆 Prizes: 🥇 ₹20,000/-<br>🥈 ₹10,000/-</li>
                       <li>📅 11th July - 13th July 2025</li>
@@ -279,6 +325,66 @@
 
                       <a href="https://tinyurl.com/Hackon2025" target="_blank"><button class="blue_button">Register Now!</button></a>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Idea Cafe-->
+          <div class="event-card">
+            <div class="flip-card">
+              <div class="flip-inner">
+                <!-- Front Side -->
+                <div class="flip-front">
+                  <img src="images/Event22.jpg" alt="Idea Cafe #60" class="event-poster">
+                </div>
+
+                <!-- Back Side -->
+                <div class="flip-back">
+                  <div class="event-details">
+                    <h2>Idea Cafe #60</h2>
+                    <p>Gravity - CIET, MCET<br>
+                    Presents! <br>
+                    EMBARKA <br>
+                    Where Chai Meets Change☕
+                    <br>Immerse yourself in meaningful conversations, share bold ideas and connect with like-minded innovators in a laid back atmosphere crafted to spark creativity.
+                    <ul>
+                      <li>📅 1st July, 2025</li>
+                      <li>🕗 03:45 PM</li>
+                      <li>📍 IEDC Room</li>
+                      <li>💸Registration Fee: ₹20/-</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Faculty Development Programme-->
+          <div class="event-card">
+            <div class="flip-card">
+              <div class="flip-inner">
+                <!-- Front Side -->
+                <div class="flip-front">
+                  <img src="images/Event21.jpg" alt="Faculty Development Programme" class="event-poster">
+                </div>
+
+                <!-- Back Side -->
+                <div class="flip-back">
+                  <div class="event-details">
+                    <h2>Faculty Development Programme</h2>
+                    <p>Gravity - CIET, MCET<br>
+                    Presents! <br>
+                    EMBARKA <br>
+                    An exclusive orientation session for faculty.
+                    <ul>
+                      <li>🎓Topic: How to Kick-start Innovation in Research and Article Writing</li>
+                      <li>🗣️ Speaker: Dr. Pradeep Raj, Dean-CIET</li>
+                      <li>📅 27th June, 2025</li>
+                      <li>🕗 01:30 PM</li>
+                      <li>📍 CGPC Hall, MCET</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -307,6 +413,35 @@
                       <li>📅 16th-20th June, 2025</li>
                       <li>🕗 09:30 AM -03:30PM</li>
                       <li>📍 Mohandas College of Engineering & Technology</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--EMBARKA-->
+          <div class="event-card">
+            <div class="flip-card">
+              <div class="flip-inner">
+                <!-- Front Side -->
+                <div class="flip-front">
+                  <img src="images/Event20.jpg" alt="Embarka" class="event-poster">
+                </div>
+
+                <!-- Back Side -->
+                <div class="flip-back">
+                  <div class="event-details">
+                    <h2>EMBARKA</h2>
+                    <p>Gravity - CIET MCET<br>
+                    Presents! <br>
+                    EMBARKA <br>
+                    Unlock your Potential, discover a clear sense of Purpose and Connect with a supportive community to shape a meaningful and rewarding Journey with μLearn.
+                    <ul>
+                      <li>📅 13th June, 2025</li>
+                      <li>🕗 9:30AM-12:30PM</li>
+                      <li>📍 Internet Lab, MCET</li>
+                      <li>💸Registration fees: ₹200/-</li>
                     </ul>
                   </div>
                 </div>

@@ -387,6 +387,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0px; /* space between cards */
   padding: 20px;
+  justify-items: center; /* Add this line to center grid items horizontally */
+  max-width: 1200px; /* Optional: limits maximum width of the grid */
+  margin: 0 auto; /* Optional: centers the grid itself if it doesn't take full width */
 }
 
 .buttons{
@@ -396,7 +399,7 @@ body {
 }
 .blue_button{
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 90px;
   font-weight: bold;
   color: aliceblue;
@@ -491,6 +494,9 @@ body {
   margin-top: -5px;
 }
 
+.food_items .upcoming-events-container {
+        display: none;
+}
 .home h1{
   text-align: center;
   margin-top: 10px;
@@ -541,7 +547,7 @@ body {
   height: 320px;
   perspective: 1000px;
   cursor: pointer;
-  margin: auto;
+  margin: 0 auto 50px !important;
   margin-bottom: 50px;
 }
 
@@ -619,7 +625,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0px; /* space between cards */
-  padding: 20px;
+  padding: 20px 0;
+  justify-items: center; /* Add this line to center grid items horizontally */
+  max-width: 1200px; /* Optional: limits maximum width of the grid */
+  margin: auto auto; /* Optional: centers the grid itself if it doesn't take full width */
 }
 
 .buttons{
@@ -629,7 +638,7 @@ body {
 }
 .blue_button{
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: -15px;
   width: 90px;
   font-weight: bold;
   color: aliceblue;
@@ -661,3 +670,4 @@ body {
   color: #1A4F7A;
 }
 }
+
