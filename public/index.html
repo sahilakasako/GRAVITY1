@@ -55,13 +55,13 @@
 
 <style>
   /* 1. Hide main content initially */
-  .main-content {  /* Changed from #main-content to .main-content to match your HTML */
+  .main-content {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s;
   }
 
-  /* 2. Intro video styling */
+  /* 2. Intro video styling - white background for better transition */
   #intro-video {
     position: fixed;
     top: 0;
@@ -70,7 +70,7 @@
     height: 100vh;
     object-fit: cover;
     z-index: 9999;
-    background-color: #000;
+    background-color: #fff;
     transition: opacity 0.5s ease;
   }
 
@@ -92,45 +92,47 @@
 <!-- Video Element -->
 <video id="intro-video" autoplay muted playsinline>
   <source src="images/Intro.mp4" type="video/mp4">
+  <!-- Fallback image if video doesn't load -->
+  <img src="images/fallback-image.jpg" style="width:100%;height:100%;object-fit:cover;">
 </video>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('intro-video');
-    const mainContent = document.querySelector('.main-content'); // Changed to class selector
+    const mainContent = document.querySelector('.main-content');
     
+    // Debugging
+    console.log('Video Status:', video.readyState);
+    console.log('Main Content Exists:', !!mainContent);
+
     function showContent() {
-      // 1. Fade out video
+      console.log('Showing content...');
       video.classList.add('video-fade-out');
       
-      // 2. After fade completes:
       setTimeout(() => {
-        // Hide video completely
         video.classList.add('hidden');
-        
-        // Show and fade in main content
         mainContent.classList.add('content-fade-in');
-        
-        // Enable scrolling (if needed)
         document.body.style.overflow = 'auto';
-      }, 500); // Match this with CSS transition time
+      }, 500);
     }
+
+    // Try to play video (helps with some mobile browsers)
+    video.play().catch(e => {
+      console.warn('Autoplay prevented:', e);
+      showContent(); // Skip to content if autoplay fails
+    });
 
     // Video end event
     video.addEventListener('ended', showContent);
     
-    // Fallback timeout (4.4 seconds)
+    // 3-second timeout (changed from 4.4s)
     setTimeout(showContent, 3000);
     
     // Error handling
     video.addEventListener('error', function() {
       console.error('Video error:', video.error);
-      showContent(); // Skip to content if video fails
+      showContent();
     });
-    
-    // Debugging
-    console.log('Video element:', video);
-    console.log('Main content:', mainContent);
   });
 </script>
 
