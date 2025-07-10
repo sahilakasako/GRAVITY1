@@ -53,6 +53,88 @@
 
   <div id="menu-backdrop" onclick="closeMobileMenu()"></div>
 
+<style>
+  /* 1. Hide main content initially */
+  .main-content {  /* Changed from #main-content to .main-content to match your HTML */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s;
+  }
+
+  /* 2. Intro video styling */
+  #intro-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 9999;
+    background-color: #000;
+    transition: opacity 0.5s ease;
+  }
+
+  /* 3. Transition classes */
+  .video-fade-out {
+    opacity: 0 !important;
+  }
+  
+  .content-fade-in {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+</style>
+
+<!-- Video Element -->
+<video id="intro-video" autoplay muted playsinline>
+  <source src="images/Intro.mp4" type="video/mp4">
+</video>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('intro-video');
+    const mainContent = document.querySelector('.main-content'); // Changed to class selector
+    
+    function showContent() {
+      // 1. Fade out video
+      video.classList.add('video-fade-out');
+      
+      // 2. After fade completes:
+      setTimeout(() => {
+        // Hide video completely
+        video.classList.add('hidden');
+        
+        // Show and fade in main content
+        mainContent.classList.add('content-fade-in');
+        
+        // Enable scrolling (if needed)
+        document.body.style.overflow = 'auto';
+      }, 500); // Match this with CSS transition time
+    }
+
+    // Video end event
+    video.addEventListener('ended', showContent);
+    
+    // Fallback timeout (4.4 seconds)
+    setTimeout(showContent, 3000);
+    
+    // Error handling
+    video.addEventListener('error', function() {
+      console.error('Video error:', video.error);
+      showContent(); // Skip to content if video fails
+    });
+    
+    // Debugging
+    console.log('Video element:', video);
+    console.log('Main content:', mainContent);
+  });
+</script>
+
+<div id="main-content">
   <div class="home">
   <div class="home_mainpage">
     <div class="main_slide">
@@ -1576,6 +1658,8 @@
     </footer>
   </div>
     <!-- The above code is for home page-->
+</div>
+
 </body>
 
 </html>
