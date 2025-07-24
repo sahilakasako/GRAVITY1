@@ -18,6 +18,16 @@
   <!-- The above code are default codes-->
   <title>Gravity-CIET | Home</title><script defer src="App1.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REJCJZPVBB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-REJCJZPVBB');
+</script>
 </head>
 <body>
   <header>
@@ -28,8 +38,8 @@
       </div></div>
     <nav>
       <ul>
-        <li class="selected"><a href="index.html">Home</a></li>
-        <li><a href="team.html">Our Team</a></li>
+        <li class="selected"><a href="Home.html">Home</a></li>
+        <li><a href="Team.html">Our Team</a></li>
         <li><a href="startup1.html">StartUps</a></li>
         <li><a href="Gallery.html">Gallery</a></li>
         <li><a href="Events.html">Events</a></li>
@@ -41,7 +51,7 @@
       <div class="bar2"></div>
       <div class="bar3"></div>
       <ul class="mobile-menu">
-        <a href="index.html"><li class="menu-item">Home</li></a>
+        <a href="Home.html"><li class="menu-item">Home</li></a>
         <a href="team.html"><li class="menu-item">Our Team</li></a>
         <a href="startup1.html"><li class="menu-item">StartUps</li></a>
         <a href="Gallery.html"><li class="menu-item">Gallery</li></a>
@@ -53,29 +63,45 @@
 
   <div id="menu-backdrop" onclick="closeMobileMenu()"></div>
 
+
 <style>
-  /* 1. Hide main content initially */
+  /* 1. Main content styling */
   .main-content {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s;
+    transition: opacity 0.5s ease;
   }
 
-  /* 2. Intro video styling - white background for better transition */
-  #intro-video {
+  /* 2. Video container with your blue background */
+  #video-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
     z-index: 9999;
-    background-color: #fff;
-    transition: opacity 0.5s ease;
+    background-color: #002f5a;
+    opacity: 1;
+    transition: opacity 0.8s ease;
   }
 
-  /* 3. Transition classes */
-  .video-fade-out {
+  /* 3. Video elements - mobile and desktop versions */
+  #intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Default show desktop video */
+  }
+
+  #intro-video-mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Hide mobile by default */
+  }
+
+  /* 4. Transition classes */
+  .fade-out {
     opacity: 0 !important;
   }
   
@@ -87,54 +113,87 @@
   .hidden {
     display: none !important;
   }
+
+  /* 5. Mobile responsive rules */
+  @media (max-width: 480px) {
+    #intro-video {
+      display: none; /* Hide desktop video on mobile */
+    }
+    #intro-video-mobile {
+      display: block; /* Show mobile video */
+    }
+  }
 </style>
 
-<!-- Video Element -->
-<video id="intro-video" autoplay muted playsinline>
-  <source src="images/Intro.mp4" type="video/mp4">
-  <!-- Fallback image if video doesn't load -->
-  <img src="images/fallback-image.jpg" style="width:100%;height:100%;object-fit:cover;">
-</video>
+<!-- Video Container with Background -->
+<div id="video-container">
+  <!-- Desktop Video -->
+  <video id="intro-video" autoplay muted playsinline>
+    <source src="images/Intro.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Mobile Video (480px or less) -->
+  <video id="intro-video-mobile" autoplay muted playsinline>
+    <source src="images/Intro-mobilee.mp4" type="video/mp4">
+  </video>
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('intro-video');
+    const displayDuration = 3000; // 3 seconds
+    const videoContainer = document.getElementById('video-container');
     const mainContent = document.querySelector('.main-content');
     
-    // Debugging
-    console.log('Video Status:', video.readyState);
-    console.log('Main Content Exists:', !!mainContent);
+    // Detect which video is active
+    const desktopVideo = document.getElementById('intro-video');
+    const mobileVideo = document.getElementById('intro-video-mobile');
+    const activeVideo = window.innerWidth <= 480 ? mobileVideo : desktopVideo;
 
     function showContent() {
-      console.log('Showing content...');
-      video.classList.add('video-fade-out');
+      // Fade out both video container and video
+      videoContainer.classList.add('fade-out');
       
+      // After fade completes, hide everything and show content
       setTimeout(() => {
-        video.classList.add('hidden');
+        videoContainer.classList.add('hidden');
         mainContent.classList.add('content-fade-in');
-        document.body.style.overflow = 'auto';
-      }, 500);
+      }, 800);
     }
 
-    // Try to play video (helps with some mobile browsers)
-    video.play().catch(e => {
-      console.warn('Autoplay prevented:', e);
-      showContent(); // Skip to content if autoplay fails
+    // Start countdown when active video begins playing
+    activeVideo.addEventListener('playing', function() {
+      setTimeout(showContent, displayDuration);
     });
 
-    // Video end event
-    video.addEventListener('ended', showContent);
-    
-    // 3-second timeout (changed from 4.4s)
-    setTimeout(showContent, 3000);
-    
+    // Fallback timer
+    const fallbackTimer = setTimeout(() => {
+      // If neither video fires 'playing' event
+      if (!activeVideo.classList.contains('played')) {
+        showContent();
+      }
+    }, displayDuration + 2000);
+
     // Error handling
-    video.addEventListener('error', function() {
-      console.error('Video error:', video.error);
-      showContent();
+    activeVideo.addEventListener('error', function() {
+      console.error('Video error:', activeVideo.error);
+      setTimeout(showContent, 800);
     });
+
+    // iOS/autoplay handling
+    const playPromise = activeVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(e => {
+        console.log('Autoplay prevented:', e);
+        activeVideo.classList.add('played');
+        setTimeout(showContent, displayDuration);
+      });
+    } else {
+      activeVideo.classList.add('played');
+    }
   });
 </script>
+
+
 
 <div id="main-content">
   <div class="home">
@@ -604,7 +663,7 @@
         </p>
       </div>
 
-      <h2 class="initiatives-ecosystem-heading">Our key initiatives:</h2>
+      <h2 class="initiatives-ecosystem-heading">Our key Initiatives:</h2>
       
       <div class="initiatives-card">
         <div class="content-initial">
@@ -1628,19 +1687,20 @@
 
           <div class="footer-column">
             <h3>Our Initiatives</h3>
-            <p>WEED</p>
-            <p>Innovation School</p>
-            <p>Idea Cafe</p>
             <p>IPR Cell</p>
             <p>TBIC</p>
-            <p>R-Hub</p>
-            <p>Design-Hub</p>
+            <p>Idea Cafe</p>
+            <p>Innovation School</p>
+            <p>WEED</p>
+            <p>The Research Hub</p>
+            <p>The Design Hub</p>
           </div>
 
           <div class="footer-column">
             <h3>Team</h3>
             <p>Execom Members</p>
             <p>μLearn Student Coordinators</p>
+            <p>WebTeam</p>
           </div>
 
           <div class="footer-column">
@@ -1659,9 +1719,8 @@
       </div>
     </footer>
   </div>
-    <!-- The above code is for home page-->
 </div>
-
+    <!-- The above code is for home page-->
 </body>
 
 </html>

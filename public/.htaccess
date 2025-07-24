@@ -1,0 +1,30 @@
+RewriteEngine On
+
+# Ensure index.html loads at root
+DirectoryIndex index.html
+
+# Rewrite pretty URLs to actual .html files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+
+RewriteRule ^Home$ Home.html [NC,L]
+RewriteRule ^Startups$ startup1.html [NC,L]
+RewriteRule ^Gallery$ Gallery.html [NC,L]
+RewriteRule ^Events$ Events.html [NC,L]
+RewriteRule ^Team$ team.html [NC,L]
+
+# Redirect actual .html URLs to pretty URLs for SEO
+RewriteCond %{THE_REQUEST} /Home\.html [NC]
+RewriteRule ^Home\.html$ /Home [NC,L,R=301]
+
+RewriteCond %{THE_REQUEST} /startup1\.html [NC]
+RewriteRule ^startup1\.html$ /Startups [NC,L,R=301]
+
+RewriteCond %{THE_REQUEST} /Gallery\.html [NC]
+RewriteRule ^Gallery\.html$ /Gallery [NC,L,R=301]
+
+RewriteCond %{THE_REQUEST} /Events\.html [NC]
+RewriteRule ^Events\.html$ /Events [NC,L,R=301]
+
+RewriteCond %{THE_REQUEST} /team\.html [NC]
+RewriteRule ^team\.html$ /Team [NC,L,R=301]
