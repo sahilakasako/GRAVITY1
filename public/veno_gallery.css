@@ -18,10 +18,6 @@
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }*/
-.searchicon{
-  display: none;
-  color: #ffffff;
-}
 
 .logo p{
   padding-right: 20px;
@@ -231,18 +227,20 @@ nav ul li a:hover {
 }
 
 body {
-  background-image: url("images/GRAVITY_BGG.png");
+  background-image: url("images/Gravity_bg.png");
   /* background-repeat: no-repeat;        Prevent repeating */
   background-position: center center; /* Center the image */
   background-size: contain;           /* Make whole image visible, fit inside container */
   /* or */
   /* background-size: 50% auto; */    /* Make width 50%, height auto to maintain ratio */
+  
 }
 
 .home{
-  padding: 8vw 7vw;
+  padding: 3vw 7vw;
   background-color: #1a4f7ace;
-  margin-top: -80px;
+  margin-top: -20px;
+  padding-top: 100px;
 }
 
 .home h1{
@@ -256,20 +254,18 @@ body {
 
 .home h3{
   text-align: center;
-  margin-top: 10px;
-  margin-left: 180px;
-  margin-right: 180px;
+  color: #5f5f5f;
+  margin-left: 130px;
+  margin-right: 130px;
+  font-size: 18px;
   font-weight: normal;
-  color: #666;
-  font-size: 17px;
-  margin-bottom: 10px;
-}
+  padding-bottom: 35px;
+} 
 
 .food_items{
   padding: 20px;
-  background-color: #f2eeee;
+  background-color: #ffffffcf;
   border-radius: 20px;
-  margin-top: 57px;
 }
 
 .food_items h1 {
@@ -282,161 +278,44 @@ body {
   color: #196ca8;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 320px;
-  perspective: 1000px;
-  cursor: pointer;
-  margin: auto;
-  margin-bottom: 50px;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 15px;
 }
 
-.flip-inner {
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fixed layout */
+}
+
+.gallery-item {
   position: relative;
-  width: 250px;
-  height: auto;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card.flipped .flip-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-front, .flip-back {
-  position: absolute;
-  width: 250px;
-  height: 320px;
-  backface-visibility: hidden;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.box .flip-front, .box .flip-back {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  backface-visibility: hidden;
   border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-.box .flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 250px;
-  perspective: 1000px;
-  cursor: pointer;
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-.flip-front img {
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-.flip-back {
-  background-color: #fff;
-  color: #1A4F7A;
-  transform: rotateY(180deg);
-  padding: 20px;
-  box-sizing: border-box;
+.gallery-item:hover img {
+  transform: scale(1.05);
 }
 
-.flip-back ul {
-  padding-left: 15px;
-  text-align: left;
-  font-size: 13px;
+/* Optional sizes for dynamic layout */
+.gallery-item.tall {
+  grid-row: span 2;
 }
 
-.flip-back ul li{
-  color: #1A4F7A;
+.gallery-item.wide {
+  grid-column: span 2;
 }
-
-.event-details h2 {
-  margin-top: 0;
-  font-size: 18px;
-  color: #1A4F7A;
-}
-
-.event-details p{
-  font-size: 13px;
-  color: #1A4F7A;
-}
-
-/* Section styling */
-.events-section {
-  padding: 60px 20px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-/* Grid layout */
-.events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 0px; /* space between cards */
-  padding: 20px;
-  justify-items: center; /* Add this line to center grid items horizontally */
-  max-width: 1200px; /* Optional: limits maximum width of the grid */
-  margin: 0 auto; /* Optional: centers the grid itself if it doesn't take full width */
-}
-
-.buttons{
-  margin-top: 10px;
-  text-align: center;
-  align-items: center;
-}
-.blue_button{
-  cursor: pointer;
-  margin-top: 0px;
-  width: 90px;
-  font-weight: bold;
-  color: aliceblue;
-  background-color: #1A4F7A;
-  border: 1px solid #1A4F7A;
-  border-radius: 5px;
-  padding: 5px 5px;
-  box-shadow: 0 0px 10px #1e5a8b;
-  transition: all 0.2s;
-  margin-bottom: 50px;
-  font-size: 12px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.blue_button i{
-  color: aliceblue;
-  transition: all 0.2s;
-}
-
-.blue_button:hover{
-  background-color: aliceblue;
-  box-shadow: 0 2px 15px #1e5888;
-  color: #1A4F7A;
-  border: 1px solid #1A4F7A;
-}
-
-.blue_button:hover i{
-  color: #1A4F7A;
-}
-
-
-
-
-
-
-
 
 
 /* Responsive */
@@ -487,16 +366,12 @@ body {
   margin-top: 2px;
 }
 
-
 .home{
   padding: 8vw 7vw;
   background-color: #1a4f7ace;
-  margin-top: -5px;
+  margin-top: 0px;
 }
 
-.food_items .upcoming-events-container {
-        display: none;
-}
 .home h1{
   text-align: center;
   margin-top: 10px;
@@ -508,27 +383,19 @@ body {
 
 .home h3{
   text-align: center;
-  margin-top: 10px;
+  color: #5f5f5f;
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 18px;
   font-weight: normal;
-  color: #666;
-  font-size: 17px;
-  margin-bottom: 10px;
-}
-
-.center-wrapper {
-    display: none !important;
-    height: 0;
-    margin: 0;
-    padding: 0;
-  }
+  padding-bottom: 35px;
+} 
 
 .food_items{
   padding: 20px;
-  background-color: #f2eeee;
+  background-color: #ffffffcf;
   border-radius: 20px;
-  margin-top: 57px;
+  margin-top: 50px;
 }
 
 .food_items h1 {
@@ -541,134 +408,50 @@ body {
   color: #196ca8;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 320px;
-  perspective: 1000px;
-  cursor: pointer;
-  margin: 0 auto 50px !important;
-  margin-bottom: 50px;
+.gallery-section {
+  padding: 10px;
+  background-color: #f7f7f7;
+  text-align: center;
 }
 
-.flip-inner {
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1, 1fr));
+  grid-auto-rows: 200px;
+  gap: 15px;
+}
+
+.gallery-grid {
+  text-align: center !important;
+  align-items: center !important;
+  grid-template-columns: 1fr;
+}
+
+.gallery-item {
   position: relative;
-  width: 250px;
-  height: auto;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card.flipped .flip-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-front, .flip-back {
-  position: absolute;
-  width: 250px;
-  height: 320px;
-  backface-visibility: hidden;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
-.flip-front img {
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-.flip-back {
-  background-color: #fff;
-  color: #1A4F7A;
-  transform: rotateY(180deg);
-  padding: 20px;
-  box-sizing: border-box;
+.gallery-item:hover img {
+  transform: scale(1.05);
 }
 
-.flip-back ul {
-  padding-left: 15px;
-  text-align: left;
-  font-size: 13px;
+/* Optional sizes for dynamic layout */
+.gallery-item.tall {
+  grid-row: span 2;
 }
 
-.flip-back ul li{
-  color: #1A4F7A;
+.gallery-item.wide {
+  grid-column: span 2;
 }
 
-.event-details h2 {
-  margin-top: 0;
-  font-size: 18px;
-  color: #1A4F7A;
 }
-
-.event-details p{
-  font-size: 13px;
-  color: #1A4F7A;
-}
-
-/* Section styling */
-.events-section {
-  padding: 60px 20px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-/* Grid layout */
-.events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 0px; /* space between cards */
-  padding: 20px 0;
-  justify-items: center; /* Add this line to center grid items horizontally */
-  max-width: 1200px; /* Optional: limits maximum width of the grid */
-  margin: auto auto; /* Optional: centers the grid itself if it doesn't take full width */
-}
-
-.buttons{
-  margin-top: 30px;
-  text-align: center;
-  align-items: center;
-}
-.blue_button{
-  cursor: pointer;
-  margin-top: -15px;
-  width: 90px;
-  font-weight: bold;
-  color: aliceblue;
-  background-color: #1A4F7A;
-  border: 1px solid #1A4F7A;
-  border-radius: 5px;
-  padding: 5px 5px;
-  box-shadow: 0 0px 10px #1e5a8b;
-  transition: all 0.2s;
-  margin-bottom: 50px;
-  font-size: 12px;
-  margin-right: 5px;
-  margin-left: 5px;
-  align-items: center;
-}
-
-.blue_button i{
-  color: aliceblue;
-  transition: all 0.2s;
-}
-
-.blue_button:hover{
-  background-color: aliceblue;
-  box-shadow: 0 2px 15px #1e5888;
-  color: #1A4F7A;
-  border: 1px solid #1A4F7A;
-}
-
-.blue_button:hover i{
-  color: #1A4F7A;
-}
-}
-
